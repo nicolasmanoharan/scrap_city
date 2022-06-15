@@ -133,7 +133,7 @@ def get_google_review(url) :
     #reviews = response.find_all('div',
     #                            class_='MyEned')
 
-    reviews = response.find_all("div",class_="jftiEf fontBodyMedium")
+    reviews = response.find_all("div",class_="MyEned")
 
 
 
@@ -149,4 +149,4 @@ def get_list_review_google(url):
 
 
 if __name__ == "__main__":
-    get_google_review("https://www.google.com/maps/place/Le+Memphis/@48.9241277,2.2173748,17z/data=!4m14!1m6!3m5!1s0x47e665854f0def19:0x8959a6a851cdae49!2sG+la+dalle+Bezons!8m2!3d48.9241277!4d2.2195635!3m6!1s0x0:0xf6d3c697e56d6fd!8m2!3d48.9256648!4d2.2212524!9m1!1b1?hl=fr")
+    get_google_review("https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1")
