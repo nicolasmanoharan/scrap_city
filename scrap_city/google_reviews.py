@@ -9,6 +9,23 @@ import os
 from dateutil.relativedelta import relativedelta
 
 
+def transform_date(A):
+    A["Review Rate"] = [i.split("\xa0")[0] for i in A["Review Rate"]]
+    A["Review Time"] = [i.strip("il y a ") for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("une", "1") for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("un", "1") for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("\xa0", " ") for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("ans", "an") for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("an", "ans") for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("jours", "jour") for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("jour", "jours") for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("semaine", "semaines")
+                        for i in A["Review Time"]]
+    A["Review Time"] = [i.replace("semaines", "semaine")
+                        for i in A["Review Time"]]
+    A["Review date collected"] = pd.to_datetime(A["Review date collected"])
+    return A
+
 def estimated_date(google_date,collected_date) :
     units = google_date.split(" ")[1]
     nunits = google_date.split(" ")[0]
@@ -149,4 +166,5 @@ def get_list_review_google(url):
 
 
 if __name__ == "__main__":
-    get_google_review("https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1")
+ temp=    get_google_review("https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1")
+ temp2 = get
