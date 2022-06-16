@@ -41,7 +41,7 @@ def estimated_date(google_date,collected_date) :
     if units == "ans" :
         temp = collected_date - relativedelta(years=int(nunits))
     else :
-        temp = None
+        print(units,nunits)
     return temp
 
 def get_review_summary(result_set):
@@ -150,7 +150,7 @@ def get_google_review(url) :
     #reviews = response.find_all('div',
     #                            class_='MyEned')
 
-    reviews = response.find_all("div",class_="MyEned")
+    reviews = response.find_all("div", class_="jftiEf fontBodyMedium")
 
 
 
@@ -160,11 +160,13 @@ def get_google_review(url) :
 def get_list_review_google(url):
     tmp = get_google_review(url)
     tmp = get_review_summary(tmp)
+    tmp = transform_date(tmp)
     tmp["review estimated date"] = [estimated_date(i, j) for i, j in zip(
         tmp["Review Time"], tmp["Review date collected"])]
     return tmp
 
 
 if __name__ == "__main__":
- temp=    get_google_review("https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1")
- temp2 = get
+    url = "https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1"
+    temp = get_list_review_google(url)
+    print(temp)
