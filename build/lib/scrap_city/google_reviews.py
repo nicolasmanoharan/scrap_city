@@ -65,7 +65,7 @@ def get_google_review(url) :
     driver.get(url)
 
     # privacy pop-up
-    xpath = "/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button/span"
+    xpath = "/html/body/c-wiz/div/div/div/div[2]/div[1]/div[4]/form/div[1]/div/button/span"
     try :
         driver.find_element_by_xpath(xpath).click()
     except :

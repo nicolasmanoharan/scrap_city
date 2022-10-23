@@ -1,0 +1,48 @@
+1666546328524	geckodriver	INFO	Listening on 127.0.0.1:51044
+1666546328847	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "51045" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/qw/jdq9zndd6h9f2c6t5z97g7k40000gn/T/rust_mozprofileDz8hp1"
+2022-10-23 19:32:11.517 plugin-container[13848:512588] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-23 19:32:11.517 plugin-container[13848:512588] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1666546331521	Marionette	INFO	Marionette enabled
+2022-10-23 19:32:11.542 plugin-container[13848:512588] nil host used in call to allowsSpecificHTTPSCertificateForHost
+1666546331542	Marionette	INFO	Listening on port 51056
+2022-10-23 19:32:11.544 plugin-container[13848:512588] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-23 19:32:11.545 plugin-container[13848:512633] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-23 19:32:11.545 plugin-container[13848:512633] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 51056
+WebDriver BiDi listening on ws://127.0.0.1:51045
+1666546331681	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/qw/jdq9zndd6h9f2c6t5z97g7k40000gn/T/rust_mozprofileDz8hp1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51045/devtools/browser/2cce64a6-8730-4343-83c0-5ee81b166aad
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.google.com."
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.fr.9lumThBzJPw.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,pwd,dw,ppl,log,std,b/am=OwBAEA/rt=j/d=1/rs=ACT90oFO26JPb_HGuN8Bk7sljsQw0RTgYw, line 3651: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Alpha-premult and y-flip are deprecated for non-DOM-Element uploads.
+1666546463659	geckodriver	INFO	Listening on 127.0.0.1:52999
+1666546464175	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "53000" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/qw/jdq9zndd6h9f2c6t5z97g7k40000gn/T/rust_mozprofile9BPY3y"
+2022-10-23 19:34:24.420 plugin-container[13859:513974] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-23 19:34:24.420 plugin-container[13859:513974] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-23 19:34:24.422 plugin-container[13859:513974] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-23 19:34:24.422 plugin-container[13859:513974] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-10-23 19:34:24.422 plugin-container[13859:513980] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-10-23 19:34:24.422 plugin-container[13859:513980] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1666546464425	Marionette	INFO	Marionette enabled
+1666546464445	Marionette	INFO	Listening on port 53007
+Read port: 53007
+WebDriver BiDi listening on ws://127.0.0.1:53000
+1666546464538	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/qw/jdq9zndd6h9f2c6t5z97g7k40000gn/T/rust_mozprofile9BPY3y/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53000/devtools/browser/58cb8422-2d13-45da-be05-addabe40ef9f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.google.com."
