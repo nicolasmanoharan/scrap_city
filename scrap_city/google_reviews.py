@@ -9,6 +9,7 @@ import os
 from dateutil.relativedelta import relativedelta
 
 
+
 def transform_date(A):
     A["Review Rate"] = [i.split("\xa0")[0] for i in A["Review Rate"]]
     A["Review Time"] = [i.strip("il y a ") for i in A["Review Time"]]
@@ -96,7 +97,7 @@ def get_google_review(url) :
     #a = total_number_of_reviews
     time.sleep(1)
     try :
-        xpatrier = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span/span"
+        xpatrier = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span/span[2]"
         driver.find_element_by_xpath(xpatrier).click()
     except :
         print("echec ouverture Trier")
@@ -156,7 +157,7 @@ def get_google_review(url) :
 
     driver.close()
     return reviews
-
+yt
 def get_list_review_google(url):
     tmp = get_google_review(url)
     tmp = get_review_summary(tmp)
@@ -164,7 +165,7 @@ def get_list_review_google(url):
     tmp["review estimated date"] = [estimated_date(i, j) for i, j in zip(
         tmp["Review Time"], tmp["Review date collected"])]
     return tmp
-
+yt
 
 if __name__ == "__main__":
     url = "https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1"
