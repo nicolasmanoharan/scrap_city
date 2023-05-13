@@ -11,7 +11,7 @@ from dateutil.relativedelta import relativedelta
 
 
 def transform_date(A):
-    A["Review Rate"] = [i.split("\xa0")[0] for i in A["Review Rate"]]
+    #A["Review Rate"] = [i.split("\xa0")[0] for i in A["Review Rate"]]
     A["Review Time"] = [i.strip("il y a ") for i in A["Review Time"]]
     A["Review Time"] = [i.replace("une", "1") for i in A["Review Time"]]
     A["Review Time"] = [i.replace("un", "1") for i in A["Review Time"]]
@@ -51,9 +51,13 @@ def get_review_summary(result_set):
         'Review Text' : [],
         'Review date collected':[]}
     for result in result_set:
-        review_rate = result.find('span', class_='kvMYJc')["aria-label"]
+        review_rate = len(result.findAll('img', attrs={'class':'hCCjke vzX5Ic','src':'//maps.gstatic.com/consumer/images/icons/2x/ic_star_rate_14.png'}))
         review_time = result.find('span',class_='rsqaWe').text
-        review_text = result.find('span',class_='wiI7pd').text
+
+        try :
+            review_text = result.find('span', class_='wiI7pd').text
+        except :
+            review_text = ""
         rev_dict['Review Rate'].append(review_rate)
         rev_dict['Review Time'].append(review_time)
         rev_dict['Review Text'].append(review_text)
@@ -85,11 +89,11 @@ def get_google_review(url) :
 
     soup = BeautifulSoup(driver.page_source,"html.parser")
 
-    xpath_nb_avis = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div/div[2]/div[2]"
+    xpath_nb_avis = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[1]/div/div[2]/div[2]"
     #total_number_of_reviews = soup.find("div", class_="gm2-caption").text
     total_number_of_reviews =driver.find_element_by_xpath(xpath_nb_avis).text
 
-
+    print(total_number_of_reviews)
 
     ## Catch nombre d'avis
     total_number_of_reviews = int(total_number_of_reviews.split(" ")[-2].replace("\u202f",""))
@@ -97,13 +101,13 @@ def get_google_review(url) :
     #a = total_number_of_reviews
     time.sleep(1)
     try :
-        xpatrier = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span/span[2]"
+        xpatrier = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[8]/div[2]/button/span/span"
         driver.find_element_by_xpath(xpatrier).click()
     except :
         print("echec ouverture Trier")
 
     time.sleep(2)
-    xpatrecent ="/html/body/div[3]/div[3]/div[1]/ul/li[2]"
+    xpatrecent = "/html/body/div[3]/div[3]/div[1]/div[2]"
     driver.find_element_by_xpath(xpatrecent).click()
 
     ## Catch cellule of reviews
@@ -116,29 +120,19 @@ def get_google_review(url) :
 
     #Find scroll layout
     old_scroll = '//*[@id="pane"]/div/div[1]/div/div/div[2]'
-    scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
+    old_scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
+    scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]"
     scrollable_div = driver.find_element_by_xpath(scroll)
     #Scroll as many times as necessary to load all reviews
     for i in range(0,(round(total_number_of_reviews/10 - 1))):
-            driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight',
-                    scrollable_div)
-            time.sleep(2)
-
-
-    #Find scroll layout
-    scrollable_div = driver.find_element_by_xpath(scroll)
-
-
-
-
-    #Scroll as many times as necessary to load all reviews
-    for i in range(0,(round(total_number_of_reviews/10 - 1))):
-            driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight',
-                    scrollable_div)
-            time.sleep(2)
-
-    liste_plus =driver.find_elements_by_xpath('//button[normalize-space()="Plus"]')
-
+        print(i)
+        driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight',
+                scrollable_div)
+        time.sleep(2)
+    try :
+        liste_plus =driver.find_elements_by_xpath('//button[normalize-space()="Plus"]')
+    except :
+        print("stop")
     for i in liste_plus :
         try :
             i.click()
@@ -157,7 +151,7 @@ def get_google_review(url) :
 
     driver.close()
     return reviews
-yt
+
 def get_list_review_google(url):
     tmp = get_google_review(url)
     tmp = get_review_summary(tmp)
@@ -165,7 +159,7 @@ def get_list_review_google(url):
     tmp["review estimated date"] = [estimated_date(i, j) for i, j in zip(
         tmp["Review Time"], tmp["Review date collected"])]
     return tmp
-yt
+
 
 if __name__ == "__main__":
     url = "https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1"
