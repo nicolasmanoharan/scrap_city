@@ -152,16 +152,18 @@ def get_google_review(url) :
     driver.close()
     return reviews
 
-def get_list_review_google(url):
+def get_list_review_google(url,name):
     tmp = get_google_review(url)
     tmp = get_review_summary(tmp)
     tmp = transform_date(tmp)
     tmp["review estimated date"] = [estimated_date(i, j) for i, j in zip(
         tmp["Review Time"], tmp["Review date collected"])]
+    tmp.to_csv(name + '.csv',sep='\t')
     return tmp
 
 
 if __name__ == "__main__":
     url = "https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1"
-    temp = get_list_review_google(url)
+    name = 'test'
+    temp = get_list_review_google(url,name)
     print(temp)
