@@ -10,32 +10,41 @@ from dateutil.relativedelta import relativedelta
 
 
 # Fonction pour enregistrer le log dans le fichier CSV
-def rec_log(entreprise, name, url, nb_avis,delta = None):
-    # Vérifier si le fichier CSV existe
-    fichier_existe = os.path.isfile('leroy.csv')
-
+def rec_log(entreprise, name, url, nb_avis_disponible, delta=None):
     # Obtenir la date et l'heure actuelles
     date_execution = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    # Créer un dictionnaire avec les données du log
+    # Créer un DataFrame avec les nouvelles données du log
     log_data = {
         'entreprise': [entreprise],
         'name': [name],
         'url': [url],
-        'nb_avis': [nb_avis],
-        'delta' : [delta],
+        'nb_avis': [nb_avis_disponible],
+        'delta': [delta],
         'date': [date_execution]
     }
+    new_df = pd.DataFrame(log_data)
 
-    # Créer un DataFrame à partir du dictionnaire
-    df = pd.DataFrame(log_data)
+    # Vérifier si le fichier CSV existe
+    fichier_existe = os.path.isfile('log.csv')
 
-    # Écrire le DataFrame dans le fichier CSV
-    mode = 'a' if fichier_existe else 'w'
-    df.to_csv('log.csv', mode=mode, index=False, header=not fichier_existe)
+    if fichier_existe:
+        # Lire le fichier CSV existant
+        existing_df = pd.read_csv('log.csv')
+
+        # Concaténer les données existantes avec les nouvelles données
+        updated_df = pd.concat([existing_df, new_df], ignore_index=True)
+
+        # Écrire le DataFrame mis à jour dans le fichier CSV
+        updated_df.to_csv('log.csv', index=False)
+    else:
+        # Écrire le DataFrame initial dans un nouveau fichier CSV
+        new_df.to_csv('log.csv', index=False)
 
     # Afficher un message de confirmation
     print('Le log a été enregistré avec succès.')
+
+
 
 
 def transform_date(A):
@@ -124,9 +133,11 @@ def get_google_review(url, entreprise, name, nb_avis):
     total_number_of_reviews =driver.find_element_by_xpath(xpath_nb_avis).text
 
     print(total_number_of_reviews)
-    rec_log(entreprise, name, url, nb_avis)
+
+
     ## Catch nombre d'avis
     total_number_of_reviews = int(total_number_of_reviews.split(" ")[-2].replace("\u202f",""))
+    rec_log(entreprise, name, url, total_number_of_reviews)
     #total_number_of_reviews = soup.find("div", class_="gm2-caption").text
     #a = total_number_of_reviews
     time.sleep(1)
