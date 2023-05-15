@@ -9,6 +9,33 @@ import os
 from dateutil.relativedelta import relativedelta
 
 
+# Fonction pour enregistrer le log dans le fichier CSV
+def rec_log(entreprise, name, url, nb_avis):
+    # Vérifier si le fichier CSV existe
+    fichier_existe = os.path.isfile('autobacs.csv')
+
+    # Obtenir la date et l'heure actuelles
+    date_execution = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+    # Créer un dictionnaire avec les données du log
+    log_data = {
+        'entreprise': [entreprise],
+        'name': [name],
+        'url': [url],
+        'nb_avis': [nb_avis],
+        'date': [date_execution]
+    }
+
+    # Créer un DataFrame à partir du dictionnaire
+    df = pd.DataFrame(log_data)
+
+    # Écrire le DataFrame dans le fichier CSV
+    mode = 'a' if fichier_existe else 'w'
+    df.to_csv('log.csv', mode=mode, index=False, header=not fichier_existe)
+
+    # Afficher un message de confirmation
+    print('Le log a été enregistré avec succès.')
+
 
 def transform_date(A):
     #A["Review Rate"] = [i.split("\xa0")[0] for i in A["Review Rate"]]
@@ -64,7 +91,8 @@ def get_review_summary(result_set):
         rev_dict['Review date collected'].append(datetime.today().strftime("%Y-%m-%d %H:%M:%S"))
     return(pd.DataFrame(rev_dict))
 
-def get_google_review(url) :
+
+def get_google_review(url, entreprise, name, nb_avis):
     # Import the webdriver
     driver = webdriver.Firefox()
     driver.get(url)
@@ -94,7 +122,7 @@ def get_google_review(url) :
     total_number_of_reviews =driver.find_element_by_xpath(xpath_nb_avis).text
 
     print(total_number_of_reviews)
-
+    rec_log(entreprise, name, url, nb_avis=total_number_of_reviews)
     ## Catch nombre d'avis
     total_number_of_reviews = int(total_number_of_reviews.split(" ")[-2].replace("\u202f",""))
     #total_number_of_reviews = soup.find("div", class_="gm2-caption").text
@@ -124,7 +152,7 @@ def get_google_review(url) :
     scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]"
     scrollable_div = driver.find_element_by_xpath(scroll)
     #Scroll as many times as necessary to load all reviews
-    for i in range(0,(round(total_number_of_reviews/10 - 1))):
+    for i in (range(0, (round(total_number_of_reviews / 10 - 1)))):
         print(i)
         driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight',
                 scrollable_div)
@@ -152,18 +180,21 @@ def get_google_review(url) :
     driver.close()
     return reviews
 
-def get_list_review_google(url,name):
-    tmp = get_google_review(url)
+
+def get_list_review_google(url, entreprise,name, nb_avis=None):
+    tmp = get_google_review(url, entreprise, name, nb_avis)
     tmp = get_review_summary(tmp)
     tmp = transform_date(tmp)
     tmp["review estimated date"] = [estimated_date(i, j) for i, j in zip(
         tmp["Review Time"], tmp["Review date collected"])]
-    tmp.to_csv(name + '.csv',sep='\t')
+    tmp = tmp.replace('\|', ',', regex=True)
+    tmp.to_csv(name + '.csv',sep='|',  index= False,encoding='utf-8')
     return tmp
 
 
 if __name__ == "__main__":
-    url = "https://www.google.com/maps/place/Compose+-+Ponthieu/@48.8715544,2.3043444,17z/data=!3m1!5s0x47e66fc407cec387:0x83b327e8760e2d11!4m7!3m6!1s0x47e66fc407fa0ad7:0x796e899d5b8cb330!8m2!3d48.8715544!4d2.3065331!9m1!1b1"
-    name = 'test'
-    temp = get_list_review_google(url,name)
+    entreprise = "autobacs"
+    url = 'https://www.google.com/maps/place/Autobacs+Saint+Brice/@49.0063107,2.3513949,17z/data=!3m1!5s0x47e669c35f71fe23:0x876080f129eb0e8f!4m8!3m7!1s0x47e669c4b9f86797:0x64eece0bcaeff204!8m2!3d49.0063107!4d2.3513949!9m1!1b1!16s%2Fg%2F1tgnqzgt'
+    name = 'autobacs-st-brice'
+    temp = get_list_review_google(url, entreprise,name)
     print(temp)
