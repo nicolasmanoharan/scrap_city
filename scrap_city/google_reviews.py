@@ -10,9 +10,9 @@ from dateutil.relativedelta import relativedelta
 
 
 # Fonction pour enregistrer le log dans le fichier CSV
-def rec_log(entreprise, name, url, nb_avis):
+def rec_log(entreprise, name, url, nb_avis,delta = None):
     # Vérifier si le fichier CSV existe
-    fichier_existe = os.path.isfile('autobacs.csv')
+    fichier_existe = os.path.isfile('leroy.csv')
 
     # Obtenir la date et l'heure actuelles
     date_execution = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -23,6 +23,7 @@ def rec_log(entreprise, name, url, nb_avis):
         'name': [name],
         'url': [url],
         'nb_avis': [nb_avis],
+        'delta' : [delta],
         'date': [date_execution]
     }
 
@@ -61,7 +62,7 @@ def estimated_date(google_date,collected_date) :
     if (units == "heures") | (units == "heure") :
         temp = collected_date - relativedelta(hours=int(nunits))
     if (units == "jours") | (units == "jours") :
-        temp = collected_date - relativedelta(day=int(nunits))
+        temp = collected_date - relativedelta(days=int(nunits))
     if (units == "semaines") | (units == "semaine") :
         temp = collected_date - relativedelta(weeks=int(nunits))
     if units == "mois" :
@@ -69,7 +70,8 @@ def estimated_date(google_date,collected_date) :
     if units == "ans" :
         temp = collected_date - relativedelta(years=int(nunits))
     else :
-        print(units,nunits)
+        print(nunits)
+        print(temp)
     return temp
 
 def get_review_summary(result_set):
@@ -122,7 +124,7 @@ def get_google_review(url, entreprise, name, nb_avis):
     total_number_of_reviews =driver.find_element_by_xpath(xpath_nb_avis).text
 
     print(total_number_of_reviews)
-    rec_log(entreprise, name, url, nb_avis=total_number_of_reviews)
+    rec_log(entreprise, name, url, nb_avis)
     ## Catch nombre d'avis
     total_number_of_reviews = int(total_number_of_reviews.split(" ")[-2].replace("\u202f",""))
     #total_number_of_reviews = soup.find("div", class_="gm2-caption").text
@@ -188,13 +190,13 @@ def get_list_review_google(url, entreprise,name, nb_avis=None):
     tmp["review estimated date"] = [estimated_date(i, j) for i, j in zip(
         tmp["Review Time"], tmp["Review date collected"])]
     tmp = tmp.replace('\|', ',', regex=True)
-    tmp.to_csv(name + '.csv',sep='|',  index= False,encoding='utf-8')
+    tmp.to_csv(name + '.csv',sep='|', encoding='utf-8')
     return tmp
 
 
 if __name__ == "__main__":
-    entreprise = "autobacs"
-    url = 'https://www.google.com/maps/place/Autobacs+Saint+Brice/@49.0063107,2.3513949,17z/data=!3m1!5s0x47e669c35f71fe23:0x876080f129eb0e8f!4m8!3m7!1s0x47e669c4b9f86797:0x64eece0bcaeff204!8m2!3d49.0063107!4d2.3513949!9m1!1b1!16s%2Fg%2F1tgnqzgt'
-    name = 'autobacs-st-brice'
+    entreprise = "leroymerlin"
+    url = 'https://www.google.fr/maps/place/Leroy+Merlin+Lognes/@48.8337414,2.642878,17z/data=!4m22!1m13!4m12!1m4!2m2!1d2.2511616!2d48.9684992!4e1!1m6!1m2!1s0x47e6055c73ac4625:0x9eb7882300ea97b1!2sleroy+merlin+lognes!2m2!1d2.6435539!2d48.8337096!3m7!1s0x47e6055c73ac4625:0x9eb7882300ea97b1!8m2!3d48.8337096!4d2.6435539!9m1!1b1!16s%2Fg%2F1tgfvyb1'
+    name = 'leroymerlin lognes'
     temp = get_list_review_google(url, entreprise,name)
     print(temp)
