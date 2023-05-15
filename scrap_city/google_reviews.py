@@ -137,9 +137,17 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     ## Catch nombre d'avis
     total_number_of_reviews = int(total_number_of_reviews.split(" ")[-2].replace("\u202f",""))
-    rec_log(entreprise, name, url, total_number_of_reviews)
-    #total_number_of_reviews = soup.find("div", class_="gm2-caption").text
-    #a = total_number_of_reviews
+    if nb_avis is not None :
+        rec_log(entreprise, name, url, total_number_of_reviews,
+            total_number_of_reviews - nb_avis)
+    else :
+        rec_log(entreprise, name, url, total_number_of_reviews)
+
+    # Check if there are new comment
+    if nb_avis == total_number_of_reviews:
+        print("aucun commentaire détecter")
+        sys.exit()
+
     time.sleep(1)
     try :
         xpatrier = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[8]/div[2]/button/span/span"
@@ -165,20 +173,26 @@ def get_google_review(url, entreprise, name, nb_avis):
     scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]"
     scrollable_div = driver.find_element_by_xpath(scroll)
     #Scroll as many times as necessary to load all reviews
-    for i in (range(0, (round(total_number_of_reviews / 10 - 1)))):
-        print(i)
-        driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight',
-                scrollable_div)
-        time.sleep(2)
-    try :
-        liste_plus =driver.find_elements_by_xpath('//button[normalize-space()="Plus"]')
-    except :
-        print("stop")
-    for i in liste_plus :
+
+
+    if nb_avis is not None :
+        total_number_of_reviews = total_number_of_reviews - nb_avis
+
+    if total_number_of_reviews >= 10 :
+        for i in (range(0, (round(total_number_of_reviews / 10 - 1)))):
+            print(i)
+            driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight',
+                    scrollable_div)
+            time.sleep(2)
         try :
-            i.click()
+            liste_plus =driver.find_elements_by_xpath('//button[normalize-space()="Plus"]')
         except :
-            print("tant pis")
+            print("stop")
+        for i in liste_plus :
+            try :
+                i.click()
+            except :
+                print("tant pis")
 
     response = BeautifulSoup(driver.page_source, 'html.parser')
 
@@ -187,7 +201,7 @@ def get_google_review(url, entreprise, name, nb_avis):
     #                            class_='MyEned')
 
     reviews = response.find_all("div", class_="jftiEf fontBodyMedium")
-
+    reviews = reviews[:total_number_of_reviews]
 
 
     driver.close()
@@ -206,8 +220,8 @@ def get_list_review_google(url, entreprise,name, nb_avis=None):
 
 
 if __name__ == "__main__":
-    entreprise = "leroymerlin"
-    url = 'https://www.google.fr/maps/place/Leroy+Merlin+Lognes/@48.8337414,2.642878,17z/data=!4m22!1m13!4m12!1m4!2m2!1d2.2511616!2d48.9684992!4e1!1m6!1m2!1s0x47e6055c73ac4625:0x9eb7882300ea97b1!2sleroy+merlin+lognes!2m2!1d2.6435539!2d48.8337096!3m7!1s0x47e6055c73ac4625:0x9eb7882300ea97b1!8m2!3d48.8337096!4d2.6435539!9m1!1b1!16s%2Fg%2F1tgfvyb1'
-    name = 'leroymerlin lognes'
+    entreprise = "BRperformance"
+    url = 'https://www.google.com/maps/place/BR-Performance+Paris/@48.5374374,2.6869919,17z/data=!4m8!3m7!1s0x47e5fa04d51161cd:0xa7bf415b857d51e2!8m2!3d48.5374374!4d2.6891806!9m1!1b1!16s%2Fg%2F1hc1dn84c'
+    name = 'BRperformance Vaux-le-penil'
     temp = get_list_review_google(url, entreprise,name)
     print(temp)
