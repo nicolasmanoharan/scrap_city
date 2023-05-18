@@ -136,12 +136,13 @@ def get_google_review(url, entreprise, name, nb_avis):
 
 
     ## Catch nombre d'avis
-    total_number_of_reviews = int(total_number_of_reviews.split(" ")[-2].replace("\u202f",""))
+    total_number_of_reviews = float(
+        total_number_of_reviews.split(" ")[-2].replace("\u202f", ""))
     if nb_avis is not None :
         rec_log(entreprise, name, url, total_number_of_reviews,
-            total_number_of_reviews - nb_avis)
+            total_number_of_reviews - float(nb_avis))
     else :
-        rec_log(entreprise, name, url, total_number_of_reviews)
+        rec_log(entreprise, name, url, float(total_number_of_reviews))
 
     # Check if there are new comment
     if nb_avis == total_number_of_reviews:
@@ -176,7 +177,7 @@ def get_google_review(url, entreprise, name, nb_avis):
 
 
     if nb_avis is not None :
-        total_number_of_reviews = total_number_of_reviews - nb_avis
+        total_number_of_reviews = total_number_of_reviews - float(nb_avis)
 
     if total_number_of_reviews >= 10 :
         for i in (range(0, (round(total_number_of_reviews / 10 - 1)))):
@@ -201,7 +202,8 @@ def get_google_review(url, entreprise, name, nb_avis):
     #                            class_='MyEned')
 
     reviews = response.find_all("div", class_="jftiEf fontBodyMedium")
-    reviews = reviews[:total_number_of_reviews]
+    print(reviews)
+    reviews = reviews[:int(total_number_of_reviews)]
 
 
     driver.close()
@@ -219,9 +221,40 @@ def get_list_review_google(url, entreprise,name, nb_avis=None):
     return tmp
 
 
+def test():
+    # Chemin vers le fichier CSV
+    chemin_fichier = 'log.csv'
+
+    # Charger le fichier CSV avec pandas
+    data_frame = pd.read_csv(chemin_fichier)
+
+    # Convertir la colonne "date" en type datetime
+    data_frame['date'] = pd.to_datetime(data_frame['date'])
+
+    # Trier le dataframe par ordre décroissant de la colonne de date
+    data_frame = data_frame.sort_values('date', ascending=False)
+
+    # Regrouper les lignes par les colonnes qui doivent être identiques
+    groupes = data_frame.groupby(['entreprise', 'name', 'url', 'nb_avis'])
+
+    # Sélectionner la ligne la plus récente dans chaque groupe
+    lignes_recentes = groupes['date'].idxmax()
+
+    # Obtenir les lignes correspondantes du dataframe original
+    lignes_selectionnees = data_frame.loc[lignes_recentes]
+
+    # Parcourir les lignes sélectionnées
+    for index, row in lignes_selectionnees.iterrows():
+        entreprise = row['entreprise']
+        name = row['name']
+        url = row['url']
+        nb_avis = row['nb_avis']
+        delta = row['delta']
+        get_list_review_google(url, entreprise, name, nb_avis)
+
 if __name__ == "__main__":
-    entreprise = "BRperformance"
-    url = 'https://www.google.com/maps/place/BR-Performance+Paris/@48.5374374,2.6869919,17z/data=!4m8!3m7!1s0x47e5fa04d51161cd:0xa7bf415b857d51e2!8m2!3d48.5374374!4d2.6891806!9m1!1b1!16s%2Fg%2F1hc1dn84c'
-    name = 'BRperformance Vaux-le-penil'
-    temp = get_list_review_google(url, entreprise,name)
-    print(temp)
+    #entreprise = "BRperformance"
+    #url = 'https://www.google.com/maps/place/BR-Performance+Paris/@48.5374374,2.6869919,17z/data=!4m8!3m7!1s0x47e5fa04d51161cd:0xa7bf415b857d51e2!8m2!3d48.5374374!4d2.6891806!9m1!1b1!16s%2Fg%2F1hc1dn84c'
+    #name = 'BRperformance Vaux-le-penil'
+    #temp = get_list_review_google(url, entreprise,name)
+    test()
