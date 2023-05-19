@@ -68,8 +68,10 @@ def estimated_date(google_date,collected_date) :
     units = google_date.split(" ")[1]
     nunits = google_date.split(" ")[0]
     print(units,nunits,collected_date)
+    if (units == "minute") | (units == "minutes") :
+        temp = collected_date - relativedelta(minutes=int(nunits))
     if (units == "heures") | (units == "heure") :
-        temp = collected_date - relativedelta(hours=int(nunits))
+        temp = collected_date - relativedelta(minutes=int(nunits))
     if (units == "jours") | (units == "jours") :
         temp = collected_date - relativedelta(days=int(nunits))
     if (units == "semaines") | (units == "semaine") :
@@ -217,7 +219,17 @@ def get_list_review_google(url, entreprise,name, nb_avis=None):
     tmp["review estimated date"] = [estimated_date(i, j) for i, j in zip(
         tmp["Review Time"], tmp["Review date collected"])]
     tmp = tmp.replace('\|', ',', regex=True)
-    tmp.to_csv(name + '.csv',sep='|', encoding='utf-8')
+    name = "entreprise"  # Remplacez par le nom souhaité pour le fichier CSV
+
+    # Code pour générer le dataframe tmp
+
+    # Vérifier si le fichier existe
+    if os.path.isfile(name + '.csv'):
+        # Le fichier existe, ajouter les lignes au fichier CSV existant
+        tmp.to_csv(name + '.csv', sep='|', encoding='utf-8', index=False, mode='a',quote= True, header= False)
+    else:
+        # Le fichier n'existe pas, créer un nouveau fichier CSV avec les lignes
+        tmp.to_csv(name + '.csv', sep='|', encoding='utf-8', index=False, quote= True)
     return tmp
 
 
