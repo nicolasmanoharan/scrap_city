@@ -44,9 +44,6 @@ def rec_log(entreprise, name, url, nb_avis_disponible, delta=None):
     # Afficher un message de confirmation
     print('Le log a été enregistré avec succès.')
 
-
-
-
 def transform_date(A):
     #A["Review Rate"] = [i.split("\xa0")[0] for i in A["Review Rate"]]
     A["Review Time"] = [i.strip("il y a ") for i in A["Review Time"]]
@@ -71,7 +68,7 @@ def estimated_date(google_date,collected_date) :
     if (units == "minute") | (units == "minutes") :
         temp = collected_date - relativedelta(minutes=int(nunits))
     if (units == "heures") | (units == "heure") :
-        temp = collected_date - relativedelta(minutes=int(nunits))
+        temp = collected_date - relativedelta(hours=int(nunits))
     if (units == "jours") | (units == "jours") :
         temp = collected_date - relativedelta(days=int(nunits))
     if (units == "semaines") | (units == "semaine") :
@@ -90,6 +87,7 @@ def get_review_summary(result_set):
         'Review Time': [],
         'Review Text' : [],
         'Review date collected':[]}
+
     for result in result_set:
         review_rate = len(result.findAll('img', attrs={'class':'hCCjke vzX5Ic','src':'//maps.gstatic.com/consumer/images/icons/2x/ic_star_rate_14.png'}))
         review_time = result.find('span',class_='rsqaWe').text
@@ -103,7 +101,6 @@ def get_review_summary(result_set):
         rev_dict['Review Text'].append(review_text)
         rev_dict['Review date collected'].append(datetime.today().strftime("%Y-%m-%d %H:%M:%S"))
     return(pd.DataFrame(rev_dict))
-
 
 def get_google_review(url, entreprise, name, nb_avis):
     # Import the webdriver
@@ -149,7 +146,7 @@ def get_google_review(url, entreprise, name, nb_avis):
     # Check if there are new comment
     if nb_avis == total_number_of_reviews:
         print("aucun commentaire détecter")
-        sys.exit()
+        return # sys.exit()
 
     time.sleep(1)
     try :
@@ -187,15 +184,15 @@ def get_google_review(url, entreprise, name, nb_avis):
             driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight',
                     scrollable_div)
             time.sleep(2)
-        try :
+    try :
             liste_plus =driver.find_elements_by_xpath('//button[normalize-space()="Plus"]')
-        except :
+    except :
             print("stop")
-        for i in liste_plus :
-            try :
+    for i in liste_plus :
+        try :
                 i.click()
-            except :
-                print("tant pis")
+        except :
+            print("tant pis")
 
     response = BeautifulSoup(driver.page_source, 'html.parser')
 
@@ -211,27 +208,27 @@ def get_google_review(url, entreprise, name, nb_avis):
     driver.close()
     return reviews
 
-
 def get_list_review_google(url, entreprise,name, nb_avis=None):
     tmp = get_google_review(url, entreprise, name, nb_avis)
+    if tmp is None :
+        return
     tmp = get_review_summary(tmp)
     tmp = transform_date(tmp)
     tmp["review estimated date"] = [estimated_date(i, j) for i, j in zip(
         tmp["Review Time"], tmp["Review date collected"])]
     tmp = tmp.replace('\|', ',', regex=True)
-    name = "entreprise"  # Remplacez par le nom souhaité pour le fichier CSV
+    name = entreprise + "_" + name  # Remplacez par le nom souhaité pour le fichier CSV
 
     # Code pour générer le dataframe tmp
 
     # Vérifier si le fichier existe
     if os.path.isfile(name + '.csv'):
         # Le fichier existe, ajouter les lignes au fichier CSV existant
-        tmp.to_csv(name + '.csv', sep='|', encoding='utf-8', index=False, mode='a',quote= True, header= False)
+        tmp.to_csv(name + '.csv', sep='|', encoding='utf-8', index=False, mode='a', header= False)
     else:
         # Le fichier n'existe pas, créer un nouveau fichier CSV avec les lignes
-        tmp.to_csv(name + '.csv', sep='|', encoding='utf-8', index=False, quote= True)
+        tmp.to_csv(name + '.csv', sep='|', encoding='utf-8', index=False)
     return tmp
-
 
 def test():
     # Chemin vers le fichier CSV
@@ -245,28 +242,28 @@ def test():
 
     # Trier le dataframe par ordre décroissant de la colonne de date
     data_frame = data_frame.sort_values('date', ascending=False)
-
     # Regrouper les lignes par les colonnes qui doivent être identiques
-    groupes = data_frame.groupby(['entreprise', 'name', 'url', 'nb_avis'])
+    groupes = data_frame.groupby(['entreprise', 'name', 'url'])
 
     # Sélectionner la ligne la plus récente dans chaque groupe
-    lignes_recentes = groupes['date'].idxmax()
+    lignes_recentes = groupes.apply(
+        lambda x: x[x['date'] == x['date'].max()]['nb_avis'])
 
+    print(lignes_recentes)
     # Obtenir les lignes correspondantes du dataframe original
-    lignes_selectionnees = data_frame.loc[lignes_recentes]
-
+    #lignes_selectionnees = data_frame.loc[lignes_recentes]
     # Parcourir les lignes sélectionnées
-    for index, row in lignes_selectionnees.iterrows():
-        entreprise = row['entreprise']
-        name = row['name']
-        url = row['url']
-        nb_avis = row['nb_avis']
-        delta = row['delta']
+    for index, nb_avis in lignes_recentes.iteritems():
+        entreprise = index[0]
+        name = index[1]
+        url = index[2]
+        nb_avis = nb_avis
+        #delta = row['delta']
         get_list_review_google(url, entreprise, name, nb_avis)
 
 if __name__ == "__main__":
-    #entreprise = "BRperformance"
-    #url = 'https://www.google.com/maps/place/BR-Performance+Paris/@48.5374374,2.6869919,17z/data=!4m8!3m7!1s0x47e5fa04d51161cd:0xa7bf415b857d51e2!8m2!3d48.5374374!4d2.6891806!9m1!1b1!16s%2Fg%2F1hc1dn84c'
-    #name = 'BRperformance Vaux-le-penil'
-    #temp = get_list_review_google(url, entreprise,name)
+    #entreprise = "Leroy Merlin"
+    #url = 'https://www.google.fr/maps/place/Leroy+Merlin+Collégien/@48.8350548,2.660387,17z/data=!4m8!3m7!1s0x47fa21b36c8d581f:0x4b608c92ba1bf7f!8m2!3d48.8350548!4d2.6625757!9m1!1b1!16s%2Fg%2F1pxwgmh18'
+    #name = 'Collegien'
+    #get_list_review_google(url, entreprise,name)
     test()
