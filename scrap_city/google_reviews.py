@@ -64,7 +64,6 @@ def transform_date(A):
 def estimated_date(google_date,collected_date) :
     units = google_date.split(" ")[1]
     nunits = google_date.split(" ")[0]
-    print(units,nunits,collected_date)
     if (units == "minute") | (units == "minutes") :
         temp = collected_date - relativedelta(minutes=int(nunits))
     if (units == "heures") | (units == "heure") :
@@ -74,12 +73,9 @@ def estimated_date(google_date,collected_date) :
     if (units == "semaines") | (units == "semaine") :
         temp = collected_date - relativedelta(weeks=int(nunits))
     if units == "mois" :
-        temp = collected_date - relativedelta(month=int(nunits))
+        temp = collected_date - relativedelta(months=int(nunits))
     if units == "ans" :
         temp = collected_date - relativedelta(years=int(nunits))
-    else :
-        print(nunits)
-        print(temp)
     return temp
 
 def get_review_summary(result_set):
@@ -131,7 +127,6 @@ def get_google_review(url, entreprise, name, nb_avis):
     #total_number_of_reviews = soup.find("div", class_="gm2-caption").text
     total_number_of_reviews =driver.find_element_by_xpath(xpath_nb_avis).text
 
-    print(total_number_of_reviews)
 
 
     ## Catch nombre d'avis
@@ -201,7 +196,6 @@ def get_google_review(url, entreprise, name, nb_avis):
     #                            class_='MyEned')
 
     reviews = response.find_all("div", class_="jftiEf fontBodyMedium")
-    print(reviews)
     reviews = reviews[:int(total_number_of_reviews)]
 
 
@@ -249,7 +243,6 @@ def test():
     lignes_recentes = groupes.apply(
         lambda x: x[x['date'] == x['date'].max()]['nb_avis'])
 
-    print(lignes_recentes)
     # Obtenir les lignes correspondantes du dataframe original
     #lignes_selectionnees = data_frame.loc[lignes_recentes]
     # Parcourir les lignes sélectionnées
