@@ -175,7 +175,6 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     if total_number_of_reviews >= 10 :
         for i in (range(0, (round(total_number_of_reviews / 10 - 1)))):
-            print(i)
             driver.execute_script('arguments[0].scrollTop = arguments[0].scrollHeight',
                     scrollable_div)
             time.sleep(2)
