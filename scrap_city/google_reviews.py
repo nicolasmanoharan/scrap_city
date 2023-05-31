@@ -141,6 +141,7 @@ def get_google_review(url, entreprise, name, nb_avis):
     # Check if there are new comment
     if nb_avis == total_number_of_reviews:
         print("aucun commentaire détecter")
+        driver.close()
         return # sys.exit()
 
     time.sleep(1)
@@ -179,12 +180,12 @@ def get_google_review(url, entreprise, name, nb_avis):
                     scrollable_div)
             time.sleep(2)
     try :
-            liste_plus =driver.find_elements_by_xpath('//button[normalize-space()="Plus"]')
+        liste_plus =driver.find_elements_by_xpath('//button[normalize-space()="Plus"]')
     except :
-            print("stop")
+        print("stop")
     for i in liste_plus :
         try :
-                i.click()
+            i.click()
         except :
             print("tant pis")
 
@@ -258,4 +259,10 @@ if __name__ == "__main__":
     #url = 'https://www.google.fr/maps/place/Leroy+Merlin+Collégien/@48.8350548,2.660387,17z/data=!4m8!3m7!1s0x47fa21b36c8d581f:0x4b608c92ba1bf7f!8m2!3d48.8350548!4d2.6625757!9m1!1b1!16s%2Fg%2F1pxwgmh18'
     #name = 'Collegien'
     #get_list_review_google(url, entreprise,name)
+    #rec_log(
+    #    entreprise="Motortech",
+    #    name="Motortech Toulon",
+    #    url=
+    #    "https://www.google.com/maps/place/Motortech+Performance+Toulon/@43.1449545,6.022858,17z/data=!4m8!3m7!1s0x12c9178cc5482ac3:0xfffd9d6d633c5dfe!8m2!3d43.1449545!4d6.0250467!9m1!1b1!16s%2Fg%2F1tmmhk1h?entry=ttu",
+    #    nb_avis_disponible=0)
     test()
