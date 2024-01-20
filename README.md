@@ -10,6 +10,13 @@ Please document the project the better you can.
 
 The initial setup.
 
+Ressource
+
+pour webdriver
+
+https://www.browserstack.com/guide/geckodriver-selenium-python
+
+
 Create virtualenv and install the project:
 ```bash
 sudo apt-get install virtualenv python-pip python-dev
