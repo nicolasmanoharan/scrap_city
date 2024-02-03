@@ -1,3 +1,4 @@
+webdriver-manager==4.0.1
 aiobotocore==2.3.3
 aiohttp==3.8.1
 aioitertools==0.10.0
