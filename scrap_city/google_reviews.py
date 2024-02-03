@@ -124,7 +124,7 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     soup = BeautifulSoup(driver.page_source,"html.parser")
 
-    xpath_nb_avis = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[1]/div/div[2]/div[2]"
+    xpath_nb_avis = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div/div[2]/div[3]"
     #total_number_of_reviews = soup.find("div", class_="gm2-caption").text
     total_number_of_reviews =driver.find_element_by_xpath(xpath_nb_avis).text
 
@@ -153,7 +153,7 @@ def get_google_review(url, entreprise, name, nb_avis):
         print("echec ouverture Trier")
 
     time.sleep(2)
-    xpatrecent = "/html/body/div[3]/div[3]/div[1]/div[2]"
+    xpatrecent = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span/span"
     driver.find_element_by_xpath(xpatrecent).click()
 
     ## Catch cellule of reviews
