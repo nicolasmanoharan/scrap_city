@@ -147,15 +147,17 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     time.sleep(1)
     try :
-        xpatrier = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]/div[8]/div[2]/button/span/span"
+        xpatrier = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span"
         driver.find_element_by_xpath(xpatrier).click()
     except :
         print("echec ouverture Trier")
 
     time.sleep(2)
-    xpatrecent = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span/span"
-    driver.find_element_by_xpath(xpatrecent).click()
-
+    try :
+        xpatrecent = "/html/body/div[2]/div[3]/div[3]/div[1]/div[2]"
+        driver.find_element_by_xpath(xpatrecent).click()
+    except :
+        print("echec du bouton avis les plus récents")
     ## Catch cellule of reviews
 
     books_html = soup.findAll('div', class_ ="jftiEf fontBodyMedium")
@@ -167,7 +169,8 @@ def get_google_review(url, entreprise, name, nb_avis):
     #Find scroll layout
     old_scroll = '//*[@id="pane"]/div/div[1]/div/div/div[2]'
     old_scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
-    scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[3]"
+    scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
+
     scrollable_div = driver.find_element_by_xpath(scroll)
     #Scroll as many times as necessary to load all reviews
 
@@ -256,14 +259,14 @@ def test():
         get_list_review_google(url, entreprise, name, nb_avis)
 
 if __name__ == "__main__":
-    #entreprise = "Leroy Merlin"
-    #url = 'https://www.google.fr/maps/place/Leroy+Merlin+Collégien/@48.8350548,2.660387,17z/data=!4m8!3m7!1s0x47fa21b36c8d581f:0x4b608c92ba1bf7f!8m2!3d48.8350548!4d2.6625757!9m1!1b1!16s%2Fg%2F1pxwgmh18'
-    #name = 'Collegien'
-    #get_list_review_google(url, entreprise,name)
+    entreprise = "Leroy Merlin"
+    url = 'https://www.google.fr/maps/place/Leroy+Merlin+Collégien/@48.8350548,2.660387,17z/data=!4m8!3m7!1s0x47fa21b36c8d581f:0x4b608c92ba1bf7f!8m2!3d48.8350548!4d2.6625757!9m1!1b1!16s%2Fg%2F1pxwgmh18'
+    name = 'Collegien'
+    get_list_review_google(url, entreprise,name)
     #rec_log(
     #    entreprise="Motortech",
     #    name="Motortech Toulon",
     #    url=
     #    "https://www.google.com/maps/place/Motortech+Performance+Toulon/@43.1449545,6.022858,17z/data=!4m8!3m7!1s0x12c9178cc5482ac3:0xfffd9d6d633c5dfe!8m2!3d43.1449545!4d6.0250467!9m1!1b1!16s%2Fg%2F1tmmhk1h?entry=ttu",
     #    nb_avis_disponible=0)
-    test()
+    #test()
