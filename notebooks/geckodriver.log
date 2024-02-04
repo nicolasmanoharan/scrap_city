@@ -646,3 +646,145 @@ JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not be
 JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
 1706951156080	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
 JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 3784: TypeError: this._windows[aWindow.__SSi] is undefined
+1706952252623	Marionette	INFO	Stopped listening on port 53598
+1706952254091	Marionette	INFO	Stopped listening on port 54897
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1706952277607	geckodriver	INFO	Listening on 127.0.0.1:55772
+1706952278000	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileTa8b7e"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706952278213	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1706952278447	Marionette	INFO	Listening on port 55780
+WebDriver BiDi listening on ws://127.0.0.1:55773
+1706952278634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:55773/devtools/browser/6dc356e7-38ce-404b-bbd5-f2b846db3942
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.google.com."
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B, line 2616: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1706952308743	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 3784: TypeError: this._windows[aWindow.__SSi] is undefined
+console.error: (new TypeError("watcher.browserElement.browsingContext is null", "resource://devtools/server/actors/watcher/target-helpers/frame-helper.js", 193))
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/shared/network-observer/NetworkUtils.sys.mjs:89:1
+_createResource@resource://devtools/server/actors/network-monitor/network-event-actor.js:186:40
+NetworkEventActor@resource://devtools/server/actors/network-monitor/network-event-actor.js:104:27
+onNetworkEvent@resource://devtools/server/actors/resources/network-events.js:284:19
+#createNetworkEvent@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:696:46
+@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:354:33
+makeInfallible/<@resource://devtools/shared/DevToolsInfaillibleUtils.sys.mjs:43:22
+Line: 89, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/shared/network-observer/NetworkUtils.sys.mjs", 89))
+Handler function threw an exception: TypeError: browsingContext.currentWindowGlobal is null
+Stack: isChannelFromSystemPrincipal@resource://devtools/shared/network-observer/NetworkUtils.sys.mjs:89:1
+_createResource@resource://devtools/server/actors/network-monitor/network-event-actor.js:186:40
+NetworkEventActor@resource://devtools/server/actors/network-monitor/network-event-actor.js:104:27
+onNetworkEvent@resource://devtools/server/actors/resources/network-events.js:284:19
+#createNetworkEvent@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:696:46
+@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:354:33
+makeInfallible/<@resource://devtools/shared/DevToolsInfaillibleUtils.sys.mjs:43:22
+Line: 89, column: 1
+console.error: (new TypeError("browsingContext.currentWindowGlobal is null", "resource://devtools/shared/network-observer/NetworkUtils.sys.mjs", 89))
+1706952484714	Marionette	INFO	Stopped listening on port 55780
+1706954679390	geckodriver	INFO	Listening on 127.0.0.1:56701
+1706954679789	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofile9DBC1x"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706954679988	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1706954680172	Marionette	INFO	Listening on port 56709
+WebDriver BiDi listening on ws://127.0.0.1:56702
+1706954680319	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:56702/devtools/browser/efd715c3-2d04-487a-af36-df0a57149323
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.google.com."
+1706954711294	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript warning: https://www.google.com/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B, line 2616: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1706955456695	geckodriver	INFO	Listening on 127.0.0.1:57383
+1706955457091	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileIlRDKo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955457293	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1706955457479	Marionette	INFO	Listening on port 57391
+WebDriver BiDi listening on ws://127.0.0.1:57384
+1706955457623	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:57384/devtools/browser/af3dd4b9-f7ea-41df-a302-b683779ca204
+1706955488095	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1706955566187	geckodriver	INFO	Listening on 127.0.0.1:57479
+1706955566585	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofile6PTaRq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706955566780	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1706955566969	Marionette	INFO	Listening on port 57487
+WebDriver BiDi listening on ws://127.0.0.1:57480
+1706955567115	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:57480/devtools/browser/63f4203a-a983-484b-acfa-607e6b78386f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://consent.google.fr."
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B, line 2616: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1706955596791	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 3784: TypeError: this._windows[aWindow.__SSi] is undefined
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B, line 859: Script terminated by timeout at:
+qb@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:859:152
+dispose@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:734:2088
+update@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:2993:274
+Ao@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:3003:439
+FCe@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:3123:430
+V@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:3126:325
+_.h_a@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:864:278
+render@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:864:545
+Wq/c<@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:888:368
+o3a@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:884:1842
+p3a@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:885:100
+tqa@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:892:348
+c@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/ck=maps.m.Ir97Gnr8rW8.L.F4.O/m=vwr,vd,a,nrw,owc,ob,sp,en,smi,sc,vlg,smr,as,wrc/am=BgAjAAI/rt=j/d=1/rs=ACT90oGR8msEdxCJRn3gH94uYT1NheIVsg/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b:1319:256
+_.ey</this.Aa@https://www.google.fr/maps/_/js/k=maps.m.fr.kDsseg7ut3A.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=BgAjAAI/rt=j/d=1/rs=ACT90oEX1rrLsGqyyKSd1JfbAEf7IhedMQ?wli=m.5tgWIlEGQkw.loadSv.O%3A%3Bm.st8o4ouo--g.mapcore.O%3A%3B:891:172
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

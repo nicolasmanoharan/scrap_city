@@ -259,14 +259,14 @@ def test():
         get_list_review_google(url, entreprise, name, nb_avis)
 
 if __name__ == "__main__":
-    entreprise = "Leroy Merlin"
-    url = 'https://www.google.fr/maps/place/Leroy+Merlin+Collégien/@48.8350548,2.660387,17z/data=!4m8!3m7!1s0x47fa21b36c8d581f:0x4b608c92ba1bf7f!8m2!3d48.8350548!4d2.6625757!9m1!1b1!16s%2Fg%2F1pxwgmh18'
-    name = 'Collegien'
-    get_list_review_google(url, entreprise,name)
+    #entreprise = "Leroy Merlin"
+    #url = 'https://www.google.fr/maps/place/Leroy+Merlin+Collégien/@48.8350548,2.660387,17z/data=!4m8!3m7!1s0x47fa21b36c8d581f:0x4b608c92ba1bf7f!8m2!3d48.8350548!4d2.6625757!9m1!1b1!16s%2Fg%2F1pxwgmh18'
+    #name = 'Collegien'
+    #get_list_review_google(url, entreprise,name)
     #rec_log(
-    #    entreprise="Motortech",
-    #    name="Motortech Toulon",
+    #    entreprise="Autobac",
+    #    name="Autobacs Herblay",
     #    url=
-    #    "https://www.google.com/maps/place/Motortech+Performance+Toulon/@43.1449545,6.022858,17z/data=!4m8!3m7!1s0x12c9178cc5482ac3:0xfffd9d6d633c5dfe!8m2!3d43.1449545!4d6.0250467!9m1!1b1!16s%2Fg%2F1tmmhk1h?entry=ttu",
+    #    "https://www.google.com/maps/place/Autobacs+Herblay/@49.0043754,2.1765449,17z/data=!4m8!3m7!1s0x47e660be3166eaa3:0x875bbd5e31321cc6!8m2!3d49.0043754!4d2.1765449!9m1!1b1!16s%2Fg%2F1tdzkw9t?entry=ttu",
     #    nb_avis_disponible=0)
-    #test()
+    test()

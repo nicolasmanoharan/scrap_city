@@ -1,10 +1,12 @@
 # Data analysis
-- Document here the project: scrap_city
-- Description: Project Description
-- Data Source:
-- Type of analysis:
 
-Please document the project the better you can.
+- Project: scrap_city 
+- Description: The main goal of this project is to scrape Google reviews. 
+- Data Source: Google reviews 
+- Type of analysis: Output CSV file
+
+This package allows you to scrape Google review data from a URL.
+/!\ 
 
 # Startup the project
 
