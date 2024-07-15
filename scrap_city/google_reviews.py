@@ -10,6 +10,8 @@ from dateutil.relativedelta import relativedelta
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 
+
+sele = FirefoxService(GeckoDriverManager().install())
 # Fonction pour enregistrer le log dans le fichier CSV
 def rec_log(entreprise, name, url, nb_avis_disponible, delta=None):
     # Obtenir la date et l'heure actuelles
@@ -86,7 +88,8 @@ def get_review_summary(result_set):
         'Review date collected':[]}
 
     for result in result_set:
-        review_rate = len(result.findAll('img', attrs={'class':'hCCjke vzX5Ic','src':'//maps.gstatic.com/consumer/images/icons/2x/ic_star_rate_14.png'}))
+        #review_rate = len(result.findAll('img', attrs={'class':'hCCjke vzX5Ic','src':'//maps.gstatic.com/consumer/images/icons/2x/ic_star_rate_14.png'}))
+        review_rate = result.find('span',class_='kvMYJc')['aria-label']
         review_time = result.find('span',class_='rsqaWe').text
 
         try :
@@ -101,7 +104,7 @@ def get_review_summary(result_set):
 
 def get_google_review(url, entreprise, name, nb_avis):
     # Import the webdriver
-    driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+    driver = webdriver.Firefox(service=sele)
     driver.get(url)
 
     # privacy pop-up
@@ -264,9 +267,9 @@ if __name__ == "__main__":
     #name = 'Collegien'
     #get_list_review_google(url, entreprise,name)
     #rec_log(
-    #    entreprise="Autobac",
-    #    name="Autobacs Herblay",
+    #    entreprise="BR Peformance",
+    #    name="Amiens",
     #    url=
-    #    "https://www.google.com/maps/place/Autobacs+Herblay/@49.0043754,2.1765449,17z/data=!4m8!3m7!1s0x47e660be3166eaa3:0x875bbd5e31321cc6!8m2!3d49.0043754!4d2.1765449!9m1!1b1!16s%2Fg%2F1tdzkw9t?entry=ttu",
+    #    "https://www.google.fr/maps/place/BR-Performance+Amiens/@49.8540983,1.8203346,17z/data=!4m8!3m7!1s0x47e767cabeb3b4ef:0x9561abfd476e0ddd!8m2!3d49.8540949!4d1.8229095!9m1!1b1!16s%2Fg%2F11j4y7sjv0?entry=ttu",
     #    nb_avis_disponible=0)
     test()
