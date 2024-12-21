@@ -11,6 +11,9 @@ from dateutil.relativedelta import relativedelta
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
 
+# Import pour By
+from selenium.webdriver.common.by import By
+
 # Configuration de base du logger
 logging.basicConfig(
     level=logging.INFO,  # Pour afficher les logs de niveau INFO et supérieur
@@ -132,16 +135,18 @@ def get_google_review(url, entreprise, name, nb_avis):
     # privacy pop-up
     xpath = "/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button/span"
     try:
-        driver.find_element_by_xpath(xpath).click()
+        driver.find_element(By.XPATH, xpath).click()
         logging.info("Pop-up de confidentialité cliquée avec succès.")
     except:
         logging.warning("Pop-up de confidentialité introuvable ou déjà fermée.")
 
-    try:
-        driver.find_element_by_xpath("/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[2]/div/div[1]/span[1]/span/span/span[2]/span[1]/button").click()
-        logging.info("Clic sur le nombre d'avis effectué.")
-    except:
-        logging.warning("Impossible de cliquer sur le nombre d'avis.")
+ #   try:
+ #       driver.find_element(By.XPATH,
+ #           "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div[1]/div[2]/div/div[1]/span[1]/span/span/span[2]/span[1]/button"
+ #       ).click()
+ #       logging.info("Clic sur le nombre d'avis effectué.")
+ #   except:
+ #       logging.warning("Impossible de cliquer sur le nombre d'avis.")
 
     time.sleep(2)
 
@@ -149,7 +154,7 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     xpath_nb_avis = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div/div[2]/div[3]"
     try:
-        total_number_of_reviews_text = driver.find_element_by_xpath(xpath_nb_avis).text
+        total_number_of_reviews_text = driver.find_element(By.XPATH, xpath_nb_avis).text
         total_number_of_reviews = float(total_number_of_reviews_text.split(" ")[-2].replace("\u202f", ""))
         logging.info(f"Nombre total d'avis détectés : {total_number_of_reviews}")
     except Exception as e:
@@ -173,7 +178,7 @@ def get_google_review(url, entreprise, name, nb_avis):
     time.sleep(1)
     try:
         xpatrier = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span"
-        driver.find_element_by_xpath(xpatrier).click()
+        driver.find_element(By.XPATH, xpatrier).click()
         logging.info("Menu 'Trier' ouvert avec succès.")
     except:
         logging.warning("Échec de l'ouverture du menu 'Trier'.")
@@ -181,7 +186,7 @@ def get_google_review(url, entreprise, name, nb_avis):
     time.sleep(2)
     try:
         xpatrecent = "/html/body/div[2]/div[3]/div[3]/div[1]/div[2]"
-        driver.find_element_by_xpath(xpatrecent).click()
+        driver.find_element(By.XPATH, xpatrecent).click()
         logging.info("Triage par avis les plus récents cliqué avec succès.")
     except:
         logging.warning("Échec du bouton 'avis les plus récents'.")
@@ -195,7 +200,7 @@ def get_google_review(url, entreprise, name, nb_avis):
     scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
 
     try:
-        scrollable_div = driver.find_element_by_xpath(scroll)
+        scrollable_div = driver.find_element(By.XPATH, scroll)
     except:
         scrollable_div = None
         logging.error("Impossible de trouver l'élément scrollable.")
@@ -212,7 +217,7 @@ def get_google_review(url, entreprise, name, nb_avis):
         logging.info("Pas de scrolling nécessaire ou scrollable_div introuvable.")
 
     try:
-        liste_plus = driver.find_elements_by_xpath('//button[normalize-space()="Plus"]')
+        liste_plus = driver.find_elements(By.XPATH, '//button[normalize-space()="Plus"]')
         for idx, plus_button in enumerate(liste_plus, start=1):
             try:
                 plus_button.click()
