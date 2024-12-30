@@ -10,6 +10,7 @@ import os
 from dateutil.relativedelta import relativedelta
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from webdriver_manager.firefox import GeckoDriverManager
+import re
 
 # Import pour By
 from selenium.webdriver.common.by import By
@@ -21,6 +22,83 @@ logging.basicConfig(
 )
 
 sele = FirefoxService(GeckoDriverManager().install())
+
+
+
+def parse_pbk6be_divs(divs):
+    """
+    Prend en entrée une liste de <div class="PBK6be"> (BeautifulSoup)
+    et retourne un dictionnaire contenant, si présents :
+      - Service : "À emporter"
+      - Prix par personne : "10–20 €"
+      - Cuisine : "5"
+      - Service_score : "4"
+      - Ambiance : "4"
+      - Type de repas : "Déjeuner"
+      - Plats recommandés : "Salade À Composer"
+      - Options pour les végétariens : "Beaucoup d’options"
+    """
+
+    data = {}
+
+    for div in divs:
+        # Récupère tout le texte "brut" du <div> pour d’éventuels tests simples
+        full_text = div.get_text(strip=True)
+
+        # 1) CAS « SCORE » (ex. "<b>Service</b> : 4", "<b>Cuisine</b> : 5", "<b>Ambiance</b> : 4")
+        # --------------------------------------------------------------------------
+        # On cherche un <b> suivi de " : X"
+        b_elem = div.find("b")
+        if b_elem:
+            # Exemple de texte possible dans b_elem.parent : "Cuisine : 5"
+            # -> On fait un test via regex
+            match = re.search(r"(Cuisine|Service|Ambiance)\s*:\s*(\d+)", b_elem.parent.get_text(strip=True))
+            if match:
+                label = match.group(1)       # "Cuisine", "Service", ou "Ambiance"
+                score = match.group(2)      # ex. "4" ou "5"
+
+                # Pour distinguer le "Service" normal (ex. "À emporter") du "Service" score (ex. "4"),
+                # on stocke la valeur dans "Service_score" si c’est le cas.
+                if label == "Service":
+                    data["Service_score"] = score
+                else:
+                    data[label] = score
+
+                continue  # On passe au div suivant, pas besoin d’analyser plus
+
+        # 2) CAS « LABEL : VALEUR » (ex. "Service" => "À emporter", "Prix par personne" => "10–20 €", etc.)
+        # --------------------------------------------------------------------------
+        # On identifie un "span" avec style="font-weight: bold;" ou un simple get_text()
+        #    <span style="font-weight: bold;">Service</span> puis la valeur est dans l'autre <span> ...
+        bold_span = div.find("span", style=re.compile(r"font-weight:\s*bold"))
+        if bold_span:
+            # Exemple : "Service", "Prix par personne", "Type de repas", "Plats recommandés", "Options pour les végétariens"
+            label_text = bold_span.get_text(strip=True)
+
+            # La valeur est souvent dans le <div> ou <span> en-dessous
+            # On va prendre tout le texte du div après avoir retiré le label lui-même
+            # Exemple de full_text : "ServiceÀ emporter"
+            # On retire "Service" pour isoler "À emporter"
+            # (en s'assurant de bien gérer les espaces)
+            remainder = full_text.replace(label_text, "", 1).strip()
+
+            # S’il y a des sauts de ligne, on peut nettoyer
+            remainder = remainder.replace("\n", "")
+            remainder = re.sub(r'\s+', ' ', remainder)
+            # On enregistre
+            data[label_text] = remainder
+
+            continue  # On passe au div suivant
+
+        # 3) CAS PARTICULIER : si aucun <b> ni style font-weight: bold,
+        #    vous pouvez ajouter d’autres règles si nécessaire.
+        # --------------------------------------------------------------------------
+        # Par exemple, "Prix par personne" pourrait parfois se trouver autrement.
+        # Ou un label "Type de repas" écrit différemment.
+
+    return data
+
+
 # Fonction pour enregistrer le log dans le fichier CSV
 def rec_log(entreprise, name, url, nb_avis_disponible, delta=None):
     logging.info(f"Entrée dans rec_log() avec entreprise={entreprise}, name={name}, url={url}, nb_avis_disponible={nb_avis_disponible}, delta={delta}")
@@ -102,6 +180,12 @@ def estimated_date(google_date, collected_date):
 def get_review_summary(result_set):
     logging.info(f"Entrée dans get_review_summary() pour {len(result_set)} reviews trouvées.")
     rev_dict = {'Review Rate': [],
+        'Review Service': [],
+        'Review Ambiance': [],
+        'Review Service_score': [],
+        'Review Cuisine' : [],
+        'Review Type de repas' : [],
+        'Review Plats recommandés' : [],
         'Review Time': [],
         'Review Text' : [],
         'Review date collected':[]}
@@ -117,7 +201,55 @@ def get_review_summary(result_set):
             review_text = result.find('span', class_='wiI7pd').text
         except:
             review_text = ""
+        try :
+            review_subitem_raw = result.find_all("div", class_="PBK6be")
+            tmp = parse_pbk6be_divs(review_subitem_raw)
+            try :
+                review_service = tmp["Service"]
+            except :
+                logging.error(f"Erreur lors de l'extraction review_service")
+                review_service = ""
+            try :
+                review_cuisine = tmp["Cuisine"]
+            except :
+                logging.error(f"Erreur lors de l'extraction review_cuisine")
+                review_cuisine = ""
+            try :
+                review_service_score = tmp["Service_score"]
+            except :
+                logging.error(f"Erreur lors de l'extraction review_service_score")
+                review_service_score = ""
+            try :
+                review_ambiance = tmp["Ambiance"]
+            except :
+                logging.error(f"Erreur lors de l'extraction review_ambiance")
+                review_ambiance = ""
+            try :
+                review_type = tmp["Type de repas"]
+            except :
+                logging.error(f"Erreur lors de l'extraction review_type")
+                review_type=""
+            try :
+                review_recommandation = tmp['Review Plats recommandés']
+            except :
+                logging.error(f"Erreur lors de l'extraction review_recommandation")
+                review_recommandation = ""
+        except :
+            logging.error(f"Erreur lors de l'extraction des sub-tems")
+            review_service = ""
+            review_cuisine = ""
+            review_service_score = ""
+            review_ambiance = ""
+            review_type = ""
+            review_recommandation = ""
+        tmp = parse_pbk6be_divs(review_subitem_raw)
 
+        rev_dict['Review Plats recommandés'].append(review_recommandation)
+        rev_dict['Review Type de repas'].append(review_type)
+        rev_dict["Review Service"].append(review_service)
+        rev_dict["Review Ambiance"].append(review_ambiance)
+        rev_dict["Review Service_score"].append(review_service_score)
+        rev_dict["Review Cuisine"].append(review_cuisine)
         rev_dict['Review Rate'].append(review_rate)
         rev_dict['Review Time'].append(review_time)
         rev_dict['Review Text'].append(review_text)
@@ -195,8 +327,8 @@ def get_google_review(url, entreprise, name, nb_avis):
     logging.info(f"Nombre de reviews trouvées avant scrolling : {len(books_html)}")
 
     #Find scroll layout
-    old_scroll = '//*[@id="pane"]/div/div[1]/div/div/div[2]'
-    old_scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
+    #old_scroll = '//*[@id="pane"]/div/div[1]/div/div/div[2]'
+    #old_scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
     scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
 
     try:
@@ -289,14 +421,15 @@ def test():
         logging.info(f"test() - groupe : entreprise={entreprise}, name={name}, url={url}, nb_avis={nb_avis}")
         get_list_review_google(url, entreprise, name, nb_avis)
 
+
 if __name__ == "__main__":
     #entreprise = "Leroy Merlin"
     #url = 'https://www.google.fr/maps/place/Leroy+Merlin+Collégien/@48.8350548,2.660387,17z/data=!4m8!3m7!1s0x47fa21b36c8d581f:0x4b608c92ba1bf7f!8m2!3d48.8350548!4d2.6625757!9m1!1b1!16s%2Fg%2F1pxwgmh18'
     #name = 'Collegien'
     #get_list_review_google(url, entreprise,name)
     #rec_log(
-    #    entreprise="BR Peformance",
-    #    name="Amiens",
-    #    url="https://www.google.fr/maps/place/BR-Performance+Amiens/@49.8540983,1.8203346,17z/data=!4m8!3m7!1s0x47e767cabeb3b4ef:0x9561abfd476e0ddd!8m2!3d49.8540949!4d1.8229095!9m1!1b1!16s%2Fg%2F11j4y7sjv0?entry=ttu",
+    #    entreprise="Cojean",
+    #    name="Cojean Lyon Part Dieu",
+    #    url="https://www.google.fr/maps/place/Cojean+Lyon+Part+Dieu/@45.7605251,4.8567572,17z/data=!4m8!3m7!1s0x47f4eb03a9888843:0x42ff333e53e24fbe!8m2!3d45.7605214!4d4.8593321!9m1!1b1!16s%2Fg%2F11y6ngxbzk?authuser=0&hl=fr&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
     #    nb_avis_disponible=0)
     test()

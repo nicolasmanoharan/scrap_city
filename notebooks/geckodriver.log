@@ -1316,3 +1316,907 @@ JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D l
 JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
 JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
 1721036046125	Marionette	INFO	Stopped listening on port 52359
+1735025417310	geckodriver	INFO	Listening on 127.0.0.1:49514
+1735025417713	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileXS0rqc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735025417969	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735025418239	Marionette	INFO	Listening on port 49523
+WebDriver BiDi listening on ws://127.0.0.1:49515
+1735025418343	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 08:30:18.519 firefox[2641:18575] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 08:30:18.519 firefox[2641:18575] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+/Users/magellan/.wdm/drivers/geckodriver/mac64/v0.35.0/geckodriver: error: Address already in use (os error 48)
+WebDriver implementation for Firefox
+
+Usage: 
+
+Options:
+      --allow-hosts <ALLOW_HOSTS>...
+          List of hostnames to allow. By default the value of --host is allowed,
+          and in addition if that's a well known local address, other variations
+          on well known local addresses are allowed. If --allow-hosts is
+          provided only exactly those hosts are allowed.
+      --allow-origins <ALLOW_ORIGINS>...
+          List of request origins to allow. These must be formatted as
+          scheme://host:port. By default any request with an origin header is
+          rejected. If --allow-origins is provided then only exactly those
+          origins are allowed.
+      --android-storage <ANDROID_STORAGE>
+          Selects storage location to be used for test data (deprecated).
+          [possible values: auto, app, internal, sdcard]
+  -b, --binary <BINARY>
+          Path to the Firefox binary
+      --connect-existing
+          Connect to an existing Firefox instance
+      --enable-crash-reporter
+          Enable the Firefox crash reporter for diagnostic purposes
+  -h, --help
+          Prints this message
+      --host <HOST>
+          Host IP to use for WebDriver server [default: 127.0.0.1]
+      --jsdebugger
+          Attach browser toolbox debugger for Firefox
+      --log <LEVEL>
+          Set Gecko log level [possible values: fatal, error, warn, info,
+          config, debug, trace]
+      --log-no-truncate
+          Disable truncation of long log lines
+      --marionette-host <HOST>
+          Host to use to connect to Gecko [default: 127.0.0.1]
+      --marionette-port <PORT>
+          Port to use to connect to Gecko [default: system-allocated port]
+  -p, --port <PORT>
+          Port to use for WebDriver server [default: 4444]
+      --profile-root <PROFILE_ROOT>
+          Directory in which to create profiles. Defaults to the system
+          temporary directory.
+  -v...
+          Log level verbosity (-v for debug and -vv for trace level)
+  -V, --version
+          Prints version and copying information
+      --websocket-port <PORT>
+          Port to use to connect to WebDriver BiDi [default: 9222]
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1735025571284	geckodriver	INFO	Listening on 127.0.0.1:49724
+1735025571687	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofile8HYsUd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735025571898	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735025572139	Marionette	INFO	Listening on port 49732
+WebDriver BiDi listening on ws://127.0.0.1:49725
+1735025572169	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 08:32:52.385 firefox[2793:22389] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 08:32:52.385 firefox[2793:22389] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735025668115	Marionette	INFO	Stopped listening on port 49732
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2515: Script terminated by timeout at:
+DVb@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:2515:146
+_.rF@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:2512:50
+start@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:3155:404
+B1a@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:978:444
+Da/<.iterator<@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:981:65
+next@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:983:45
+c@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:988:502
+Er@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:985:132
+o2a@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:990:581
+pFa@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:992:398
+c@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGDYBy2xHU28dwfsdN5npOjz32kCA/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?wli=m.DUKneoDoDjA.loadSv.O:;:1316:260
+_.Hr</this.Na@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:991:139
+c@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGDYBy2xHU28dwfsdN5npOjz32kCA/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?wli=m.DUKneoDoDjA.loadSv.O:;:1316:260
+_.em.Pwb/a.port1.onmessage@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B:560:1062
+
+1735025708541	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileksPcOd"
+/Users/magellan/.wdm/drivers/geckodriver/mac64/v0.35.0/geckodriver: error: Address already in use (os error 48)
+WebDriver implementation for Firefox
+
+Usage: 
+
+Options:
+      --allow-hosts <ALLOW_HOSTS>...
+          List of hostnames to allow. By default the value of --host is allowed,
+          and in addition if that's a well known local address, other variations
+          on well known local addresses are allowed. If --allow-hosts is
+          provided only exactly those hosts are allowed.
+      --allow-origins <ALLOW_ORIGINS>...
+          List of request origins to allow. These must be formatted as
+          scheme://host:port. By default any request with an origin header is
+          rejected. If --allow-origins is provided then only exactly those
+          origins are allowed.
+      --android-storage <ANDROID_STORAGE>
+          Selects storage location to be used for test data (deprecated).
+          [possible values: auto, app, internal, sdcard]
+  -b, --binary <BINARY>
+          Path to the Firefox binary
+      --connect-existing
+          Connect to an existing Firefox instance
+      --enable-crash-reporter
+          Enable the Firefox crash reporter for diagnostic purposes
+  -h, --help
+          Prints this message
+      --host <HOST>
+          Host IP to use for WebDriver server [default: 127.0.0.1]
+      --jsdebugger
+          Attach browser toolbox debugger for Firefox
+      --log <LEVEL>
+          Set Gecko log level [possible values: fatal, error, warn, info,
+          config, debug, trace]
+      --log-no-truncate
+          Disable truncation of long log lines
+      --marionette-host <HOST>
+          Host to use to connect to Gecko [default: 127.0.0.1]
+      --marionette-port <PORT>
+          Port to use to connect to Gecko [default: system-allocated port]
+  -p, --port <PORT>
+          Port to use for WebDriver server [default: 4444]
+      --profile-root <PROFILE_ROOT>
+          Directory in which to create profiles. Defaults to the system
+          temporary directory.
+  -v...
+          Log level verbosity (-v for debug and -vv for trace level)
+  -V, --version
+          Prints version and copying information
+      --websocket-port <PORT>
+          Port to use to connect to WebDriver BiDi [default: 9222]
+
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735025708743	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735025709006	Marionette	INFO	Listening on port 49818
+WebDriver BiDi listening on ws://127.0.0.1:49725
+1735025709106	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 08:35:09.387 firefox[2821:24170] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 08:35:09.387 firefox[2821:24170] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735025807615	Marionette	INFO	Stopped listening on port 49818
+1735025899912	geckodriver	INFO	Listening on 127.0.0.1:49906
+1735025900321	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofilexUxHCw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735025900532	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735025900822	Marionette	INFO	Listening on port 49914
+WebDriver BiDi listening on ws://127.0.0.1:49907
+1735025900980	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 08:38:21.201 firefox[2855:27253] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 08:38:21.201 firefox[2855:27253] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: aWindow is null
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.ConsentUi.fr.VbXdK3xK4Xk.es5.O/am=gcEEuQU/d=1/excm=_b,_tp,mainview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlEGRb23gLktLPrhmA5ytVTxdMbFHg/m=_b,_tp, line 301: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.ConsentUi.fr.VbXdK3xK4Xk.es5.O/am=gcEEuQU/d=1/excm=_b,_tp,mainview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlEGRb23gLktLPrhmA5ytVTxdMbFHg/m=_b,_tp:301:187
+b@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.ConsentUi.fr.VbXdK3xK4Xk.es5.O/am=gcEEuQU/d=1/excm=_b,_tp,mainview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlEGRb23gLktLPrhmA5ytVTxdMbFHg/m=_b,_tp:294:48
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1735025913499	geckodriver	INFO	Listening on 127.0.0.1:50016
+1735025913906	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileG8nMBH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735025914125	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735025914386	Marionette	INFO	Listening on port 50024
+WebDriver BiDi listening on ws://127.0.0.1:50017
+1735025914545	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 08:38:34.650 firefox[2884:27999] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 08:38:34.650 firefox[2884:27999] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1735026066330	geckodriver	INFO	Listening on 127.0.0.1:50157
+1735026066738	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofilewWl1qa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735026066950	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735026067229	Marionette	INFO	Listening on port 50165
+WebDriver BiDi listening on ws://127.0.0.1:50158
+1735026067378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 08:41:07.609 firefox[2946:30649] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 08:41:07.609 firefox[2946:30649] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1735026452997	geckodriver	INFO	Listening on 127.0.0.1:50363
+1735026453403	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileXClPxF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735026453622	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735026453906	Marionette	INFO	Listening on port 50371
+WebDriver BiDi listening on ws://127.0.0.1:50364
+1735026454054	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+2024-12-24 08:47:34.411 firefox[3024:36665] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 08:47:34.411 firefox[3024:36665] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735026549910	Marionette	INFO	Stopped listening on port 50371
+1735026570650	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofile7S5X1Y"
+/Users/magellan/.wdm/drivers/geckodriver/mac64/v0.35.0/geckodriver: error: Address already in use (os error 48)
+WebDriver implementation for Firefox
+
+Usage: 
+
+Options:
+      --allow-hosts <ALLOW_HOSTS>...
+          List of hostnames to allow. By default the value of --host is allowed,
+          and in addition if that's a well known local address, other variations
+          on well known local addresses are allowed. If --allow-hosts is
+          provided only exactly those hosts are allowed.
+      --allow-origins <ALLOW_ORIGINS>...
+          List of request origins to allow. These must be formatted as
+          scheme://host:port. By default any request with an origin header is
+          rejected. If --allow-origins is provided then only exactly those
+          origins are allowed.
+      --android-storage <ANDROID_STORAGE>
+          Selects storage location to be used for test data (deprecated).
+          [possible values: auto, app, internal, sdcard]
+  -b, --binary <BINARY>
+          Path to the Firefox binary
+      --connect-existing
+          Connect to an existing Firefox instance
+      --enable-crash-reporter
+          Enable the Firefox crash reporter for diagnostic purposes
+  -h, --help
+          Prints this message
+      --host <HOST>
+          Host IP to use for WebDriver server [default: 127.0.0.1]
+      --jsdebugger
+          Attach browser toolbox debugger for Firefox
+      --log <LEVEL>
+          Set Gecko log level [possible values: fatal, error, warn, info,
+          config, debug, trace]
+      --log-no-truncate
+          Disable truncation of long log lines
+      --marionette-host <HOST>
+          Host to use to connect to Gecko [default: 127.0.0.1]
+      --marionette-port <PORT>
+          Port to use to connect to Gecko [default: system-allocated port]
+  -p, --port <PORT>
+          Port to use for WebDriver server [default: 4444]
+      --profile-root <PROFILE_ROOT>
+          Directory in which to create profiles. Defaults to the system
+          temporary directory.
+  -v...
+          Log level verbosity (-v for debug and -vv for trace level)
+  -V, --version
+          Prints version and copying information
+      --websocket-port <PORT>
+          Port to use to connect to WebDriver BiDi [default: 9222]
+
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735026570850	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735026571130	Marionette	INFO	Listening on port 50437
+WebDriver BiDi listening on ws://127.0.0.1:50364
+1735026571288	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 08:49:31.508 firefox[3038:38165] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 08:49:31.508 firefox[3038:38165] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735026668632	Marionette	INFO	Stopped listening on port 50437
+1735028802699	geckodriver	INFO	Listening on 127.0.0.1:50977
+1735028803107	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofilebJoSWw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735028803326	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735028803614	Marionette	INFO	Listening on port 50985
+WebDriver BiDi listening on ws://127.0.0.1:50978
+1735028803768	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 09:26:44.012 firefox[16244:104938] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 09:26:44.012 firefox[16244:104938] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript error: resource:///modules/sessionstore/SessionStore.sys.mjs, line 3624: TypeError: this._windows[aWindow.__SSi] is undefined
+JavaScript warning: https://www.gstatic.com/og/_/js/k=og.og.en_US.trM0FDe_je8.es5.O/rt=j/m=ld,gl,sd,p,vd,lod,eld,cpd,aswid,qads/exm=bt,base,bn,bu,cp,el,lo,sf,up,dd,aw,iw,gi,vi,eq,bid,bgs/d=1/ed=1/rs=AA2YrTuOhnS96qwZi6Y6WcWXjj8KTiujKQ, line 184: Script terminated by timeout at:
+Ew@https://www.gstatic.com/og/_/js/k=og.og.en_US.trM0FDe_je8.es5.O/rt=j/m=ld,gl,sd,p,vd,lod,eld,cpd,aswid,qads/exm=bt,base,bn,bu,cp,el,lo,sf,up,dd,aw,iw,gi,vi,eq,bid,bgs/d=1/ed=1/rs=AA2YrTuOhnS96qwZi6Y6WcWXjj8KTiujKQ:184:35
+Ev.prototype.remove@https://www.gstatic.com/og/_/js/k=og.og.en_US.trM0FDe_je8.es5.O/rt=j/m=ld,gl,sd,p,vd,lod,eld,cpd,aswid,qads/exm=bt,base,bn,bu,cp,el,lo,sf,up,dd,aw,iw,gi,vi,eq,bid,bgs/d=1/ed=1/rs=AA2YrTuOhnS96qwZi6Y6WcWXjj8KTiujKQ:192:40
+Ix@https://www.gstatic.com/og/_/js/k=og.og.en_US.trM0FDe_je8.es5.O/rt=j/m=ld,gl,sd,p,vd,lod,eld,cpd,aswid,qads/exm=bt,base,bn,bu,cp,el,lo,sf,up,dd,aw,iw,gi,vi,eq,bid,bgs/d=1/ed=1/rs=AA2YrTuOhnS96qwZi6Y6WcWXjj8KTiujKQ:213:278
+jx.prototype.jh@https://www.gstatic.com/og/_/js/k=og.og.en_US.trM0FDe_je8.es5.O/rt=j/m=ld,gl,sd,p,vd,lod,eld,cpd,aswid,qads/exm=bt,base,bn,bu,cp,el,lo,sf,up,dd,aw,iw,gi,vi,eq,bid,bgs/d=1/ed=1/rs=AA2YrTuOhnS96qwZi6Y6WcWXjj8KTiujKQ:213:376
+se@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B line 195 > eval:88:104
+b@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B line 195 > eval:85:475
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1735028827051	geckodriver	INFO	Listening on 127.0.0.1:51103
+1735028827465	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileHNWiEn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735028827685	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735028827947	Marionette	INFO	Listening on port 51111
+WebDriver BiDi listening on ws://127.0.0.1:51104
+1735028828096	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 09:27:08.195 firefox[16418:106323] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 09:27:08.195 firefox[16418:106323] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735028923979	Marionette	INFO	Stopped listening on port 51111
+1735028977718	geckodriver	INFO	Listening on 127.0.0.1:51168
+1735028978119	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileBqTnYt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735028978336	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735028978613	Marionette	INFO	Listening on port 51176
+WebDriver BiDi listening on ws://127.0.0.1:51169
+1735028978763	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 09:29:38.860 firefox[17350:111020] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 09:29:38.860 firefox[17350:111020] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: aWindow is null
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L, line 126: Script terminated by timeout at:
+_.Ega@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:126:64
+_.Jga@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:502:99
+_.Lga@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:127:302
+e@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:135:186
+_.Ega@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:126:115
+_.Jga@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:502:99
+Kga@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:127:139
+_.UAa/<@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:519:308
+_.TAa@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:519:208
+_.UAa@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:519:292
+GB@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=YACQ5AAU/rt=j/d=1/rs=ACT90oFtSGdMGw7Aq-WOdH16LeYG7vzD6A/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?cb=L&wli=m.DUKneoDoDjA.loadSv.O:;:819:290
+_.ud@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:174:386
+_.G@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:172:475
+N@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=YACQ5AAU/rt=j/d=1/rs=ACT90oFtSGdMGw7Aq-WOdH16LeYG7vzD6A/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?cb=L&wli=m.DUKneoDoDjA.loadSv.O:;:443:1619
+na@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=YACQ5AAU/rt=j/d=1/rs=ACT90oFtSGdMGw7Aq-WOdH16LeYG7vzD6A/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?cb=L&wli=m.DUKneoDoDjA.loadSv.O:;:452:421
+@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=YACQ5AAU/rt=j/d=1/rs=ACT90oFtSGdMGw7Aq-WOdH16LeYG7vzD6A/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?cb=L&wli=m.DUKneoDoDjA.loadSv.O:;:181:329
+O@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=YACQ5AAU/rt=j/d=1/rs=ACT90oFtSGdMGw7Aq-WOdH16LeYG7vzD6A/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?cb=L&wli=m.DUKneoDoDjA.loadSv.O:;:864:421
+next@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=YACQ5AAU/rt=j/d=1/rs=ACT90oFtSGdMGw7Aq-WOdH16LeYG7vzD6A/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?cb=L&wli=m.DUKneoDoDjA.loadSv.O:;:862:67
+c@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:988:502
+Er@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:985:132
+o2a@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:990:581
+pFa@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:992:398
+c@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=YACQ5AAU/rt=j/d=1/rs=ACT90oFtSGdMGw7Aq-WOdH16LeYG7vzD6A/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?cb=L&wli=m.DUKneoDoDjA.loadSv.O:;:1316:260
+_.Hr</this.Na@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:991:139
+c@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/ck=maps.m.ow2vKsZI084.L.F4.O/m=vwr,vd,a,nrw,owc,ob,mmm,sp,en,smi,sc,vlg,smr,SuCOhe,LsiLPd,BW38Xe,JxdeQb,cQ25Ub,uA7o6c,b8h8i,wrc/am=YACQ5AAU/rt=j/d=1/rs=ACT90oFtSGdMGw7Aq-WOdH16LeYG7vzD6A/ed=1/exm=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b?cb=L&wli=m.DUKneoDoDjA.loadSv.O:;:1316:260
+_.em.Pwb/a.port1.onmessage@https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B&cb=L:560:1062
+
+/Users/magellan/.wdm/drivers/geckodriver/mac64/v0.35.0/geckodriver: error: Address already in use (os error 48)
+WebDriver implementation for Firefox
+
+Usage: 
+
+Options:
+      --allow-hosts <ALLOW_HOSTS>...
+          List of hostnames to allow. By default the value of --host is allowed,
+          and in addition if that's a well known local address, other variations
+          on well known local addresses are allowed. If --allow-hosts is
+          provided only exactly those hosts are allowed.
+      --allow-origins <ALLOW_ORIGINS>...
+          List of request origins to allow. These must be formatted as
+          scheme://host:port. By default any request with an origin header is
+          rejected. If --allow-origins is provided then only exactly those
+          origins are allowed.
+      --android-storage <ANDROID_STORAGE>
+          Selects storage location to be used for test data (deprecated).
+          [possible values: auto, app, internal, sdcard]
+  -b, --binary <BINARY>
+          Path to the Firefox binary
+      --connect-existing
+          Connect to an existing Firefox instance
+      --enable-crash-reporter
+          Enable the Firefox crash reporter for diagnostic purposes
+  -h, --help
+          Prints this message
+      --host <HOST>
+          Host IP to use for WebDriver server [default: 127.0.0.1]
+      --jsdebugger
+          Attach browser toolbox debugger for Firefox
+      --log <LEVEL>
+          Set Gecko log level [possible values: fatal, error, warn, info,
+          config, debug, trace]
+      --log-no-truncate
+          Disable truncation of long log lines
+      --marionette-host <HOST>
+          Host to use to connect to Gecko [default: 127.0.0.1]
+      --marionette-port <PORT>
+          Port to use to connect to Gecko [default: system-allocated port]
+  -p, --port <PORT>
+          Port to use for WebDriver server [default: 4444]
+      --profile-root <PROFILE_ROOT>
+          Directory in which to create profiles. Defaults to the system
+          temporary directory.
+  -v...
+          Log level verbosity (-v for debug and -vv for trace level)
+  -V, --version
+          Prints version and copying information
+      --websocket-port <PORT>
+          Port to use to connect to WebDriver BiDi [default: 9222]
+
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1735029071574	geckodriver	INFO	Listening on 127.0.0.1:51312
+1735029071988	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileHOD7g7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735029072201	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735029072474	Marionette	INFO	Listening on port 51320
+WebDriver BiDi listening on ws://127.0.0.1:51313
+1735029072620	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 09:31:12.860 firefox[19875:120236] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 09:31:12.860 firefox[19875:120236] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735029139667	Marionette	INFO	Stopped listening on port 51320
+1735029267178	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileK1Kv2T"
+/Users/magellan/.wdm/drivers/geckodriver/mac64/v0.35.0/geckodriver: error: Address already in use (os error 48)
+WebDriver implementation for Firefox
+
+Usage: 
+
+Options:
+      --allow-hosts <ALLOW_HOSTS>...
+          List of hostnames to allow. By default the value of --host is allowed,
+          and in addition if that's a well known local address, other variations
+          on well known local addresses are allowed. If --allow-hosts is
+          provided only exactly those hosts are allowed.
+      --allow-origins <ALLOW_ORIGINS>...
+          List of request origins to allow. These must be formatted as
+          scheme://host:port. By default any request with an origin header is
+          rejected. If --allow-origins is provided then only exactly those
+          origins are allowed.
+      --android-storage <ANDROID_STORAGE>
+          Selects storage location to be used for test data (deprecated).
+          [possible values: auto, app, internal, sdcard]
+  -b, --binary <BINARY>
+          Path to the Firefox binary
+      --connect-existing
+          Connect to an existing Firefox instance
+      --enable-crash-reporter
+          Enable the Firefox crash reporter for diagnostic purposes
+  -h, --help
+          Prints this message
+      --host <HOST>
+          Host IP to use for WebDriver server [default: 127.0.0.1]
+      --jsdebugger
+          Attach browser toolbox debugger for Firefox
+      --log <LEVEL>
+          Set Gecko log level [possible values: fatal, error, warn, info,
+          config, debug, trace]
+      --log-no-truncate
+          Disable truncation of long log lines
+      --marionette-host <HOST>
+          Host to use to connect to Gecko [default: 127.0.0.1]
+      --marionette-port <PORT>
+          Port to use to connect to Gecko [default: system-allocated port]
+  -p, --port <PORT>
+          Port to use for WebDriver server [default: 4444]
+      --profile-root <PROFILE_ROOT>
+          Directory in which to create profiles. Defaults to the system
+          temporary directory.
+  -v...
+          Log level verbosity (-v for debug and -vv for trace level)
+  -V, --version
+          Prints version and copying information
+      --websocket-port <PORT>
+          Port to use to connect to WebDriver BiDi [default: 9222]
+
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735029267395	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735029267664	Marionette	INFO	Listening on port 51436
+WebDriver BiDi listening on ws://127.0.0.1:51313
+1735029267818	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 09:34:28.037 firefox[22187:129641] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 09:34:28.037 firefox[22187:129641] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735029278036	Marionette	INFO	Stopped listening on port 51436
+1735029425441	geckodriver	INFO	Listening on 127.0.0.1:51587
+1735029425851	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileW41CWl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735029426067	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735029426328	Marionette	INFO	Listening on port 51595
+WebDriver BiDi listening on ws://127.0.0.1:51588
+1735029426474	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 09:37:06.569 firefox[24055:137880] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 09:37:06.570 firefox[24055:137880] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735029437011	Marionette	INFO	Stopped listening on port 51595
+1735029468907	geckodriver	INFO	Listening on 127.0.0.1:51725
+1735029469319	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileEESwOd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735029469532	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735029469793	Marionette	INFO	Listening on port 51733
+WebDriver BiDi listening on ws://127.0.0.1:51726
+1735029469945	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735029480120	Marionette	INFO	Stopped listening on port 51733
+1735029503478	geckodriver	INFO	Listening on 127.0.0.1:51847
+1735029503889	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofile9Sa9Kx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735029504103	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735029504358	Marionette	INFO	Listening on port 51855
+WebDriver BiDi listening on ws://127.0.0.1:51848
+1735029504506	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 09:38:24.772 firefox[25041:143120] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 09:38:24.772 firefox[25041:143120] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735029514561	Marionette	INFO	Stopped listening on port 51855
+1735029647257	geckodriver	INFO	Listening on 127.0.0.1:51927
+1735029647668	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileIt9I1N"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735029647888	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735029648142	Marionette	INFO	Listening on port 51935
+WebDriver BiDi listening on ws://127.0.0.1:51928
+1735029648289	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 09:40:48.514 firefox[26762:150234] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 09:40:48.514 firefox[26762:150234] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735029658300	Marionette	INFO	Stopped listening on port 51935
+1735033584676	geckodriver	INFO	Listening on 127.0.0.1:52359
+1735033585079	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofilezUoTvQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735033585294	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735033585541	Marionette	INFO	Listening on port 52367
+WebDriver BiDi listening on ws://127.0.0.1:52360
+1735033585622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 10:46:25.878 firefox[62221:297368] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 10:46:25.878 firefox[62221:297368] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735033595694	Marionette	INFO	Stopped listening on port 52367
+1735033653267	geckodriver	INFO	Listening on 127.0.0.1:52479
+1735033653684	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileDfynai"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735033653884	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735033654106	Marionette	INFO	Listening on port 52487
+WebDriver BiDi listening on ws://127.0.0.1:52480
+1735033654180	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 10:47:34.409 firefox[63058:301735] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 10:47:34.409 firefox[63058:301735] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=YACQ5AAU/rt=j/d=1/rs=ACT90oGgt5xnTvn9H6jFEekGEv4IcRmuzg?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735033664250	Marionette	INFO	Stopped listening on port 52487
+1735034074146	geckodriver	INFO	Listening on 127.0.0.1:52663
+1735034074561	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofilewrae0G"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735034074763	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735034074972	Marionette	INFO	Listening on port 52683
+WebDriver BiDi listening on ws://127.0.0.1:52664
+1735034074993	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 10:54:35.275 firefox[68020:322165] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 10:54:35.275 firefox[68020:322165] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735034084885	Marionette	INFO	Stopped listening on port 52683
+1735034227884	geckodriver	INFO	Listening on 127.0.0.1:52809
+1735034228307	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofilexnUxk9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735034228508	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735034228722	Marionette	INFO	Listening on port 52817
+WebDriver BiDi listening on ws://127.0.0.1:52810
+1735034228743	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 10:57:09.055 firefox[69860:330108] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 10:57:09.055 firefox[69860:330108] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735034238695	Marionette	INFO	Stopped listening on port 52817
+1735034369335	geckodriver	INFO	Listening on 127.0.0.1:52884
+1735034369753	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofile6v3Prk"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1735034369949	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1735034370161	Marionette	INFO	Listening on port 52892
+WebDriver BiDi listening on ws://127.0.0.1:52885
+1735034370280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2024-12-24 10:59:30.500 firefox[71522:337260] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-24 10:59:30.500 firefox[71522:337260] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.U14K0OUOZD0.2019.O/m=sc2,per,mo,lp,ep,ti,ds,stx,dwi,enr,pwd,dw,ppl,log,std,b/am=4ACQ5AAU/rt=j/d=1/rs=ACT90oGTui9QHd4m0Y3Ik7d_H8UMjlq85Q?wli=m.DUKneoDoDjA.loadSv.O%3A%3B, line 2598: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+1735034379985	Marionette	INFO	Stopped listening on port 52892
