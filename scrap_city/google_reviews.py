@@ -265,7 +265,7 @@ def get_google_review(url, entreprise, name, nb_avis):
     driver.get(url)
 
     # privacy pop-up
-    xpath = "/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button/span"
+    xpath = "/html/body/c-wiz/div/div/div/div[2]/div[1]/div[3]/div[1]/div[1]/form[2]/div/div/button/span[6]"
     try:
         driver.find_element(By.XPATH, xpath).click()
         logging.info("Pop-up de confidentialité cliquée avec succès.")
