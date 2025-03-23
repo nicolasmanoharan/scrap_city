@@ -284,7 +284,7 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     soup = BeautifulSoup(driver.page_source,"html.parser")
 
-    xpath_nb_avis = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div/div[2]/div[3]"
+    xpath_nb_avis = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[4]/div[1]/div/div[2]/div[3]"
     try:
         total_number_of_reviews_text = driver.find_element(By.XPATH, xpath_nb_avis).text
         total_number_of_reviews = float(total_number_of_reviews_text.split(" ")[-2].replace("\u202f", ""))
@@ -309,7 +309,7 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     time.sleep(1)
     try:
-        xpatrier = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span"
+        xpatrier = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[4]/div[8]/div[2]/button/span"
         driver.find_element(By.XPATH, xpatrier).click()
         logging.info("Menu 'Trier' ouvert avec succès.")
     except:
@@ -329,8 +329,8 @@ def get_google_review(url, entreprise, name, nb_avis):
     #Find scroll layout
     #old_scroll = '//*[@id="pane"]/div/div[1]/div/div/div[2]'
     #old_scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
-    scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
-
+    #scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
+    scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[4]"
     try:
         scrollable_div = driver.find_element(By.XPATH, scroll)
     except:
