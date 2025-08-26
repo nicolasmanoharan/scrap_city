@@ -2761,3 +2761,51 @@ JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProce
 JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
 JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
 JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1742802856557	Marionette	INFO	Stopped listening on port 52430
+1742802857931	Marionette	INFO	Stopped listening on port 52202
+1742802858718	Marionette	INFO	Stopped listening on port 51016
+1742802862656	Marionette	INFO	Stopped listening on port 51387
+1742802864514	Marionette	INFO	Stopped listening on port 50923
+1742802866063	Marionette	INFO	Stopped listening on port 52401
+1742802867654	Marionette	INFO	Stopped listening on port 52562
+1756199620594	geckodriver	INFO	Listening on 127.0.0.1:64733
+1756199621014	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/Applications/Firefox. ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/4z/rs890ggx6mv9__ry8_4g0zk00000gp/T/rust_mozprofileD2fsHV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1756199621233	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1756199621473	Marionette	INFO	Listening on port 64741
+WebDriver BiDi listening on ws://127.0.0.1:64734
+1756199621551	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+2025-08-26 11:13:41.671 firefox[74984:1203174] +[IMKClient subclass]: chose IMKClient_Modern
+2025-08-26 11:13:41.671 firefox[74984:1203174] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript warning: https://www.google.fr/maps/_/js/k=maps.m.fr.4HGJ1_23ha8.2021.O/m=sc2,per,mo,lp,ep,ti,stx,ds,dwi,enr,pwd,dw,ppl,log,std,b/am=5AAAIgEI/rt=j/d=1/rs=ACT90oHfxUuc2GMuA6yERDfYiQafg1EN0w?wli=m.a9W_KEtv2yI.loadSv.O%3A%3Bm.AwnKlhiN68k.mapcore.O%3A%3B&cb=M, line 2287: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: texSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Texture has not been initialized prior to a partial upload, forcing the browser to clear it. This may be slow.
+JavaScript warning: , line 0: WebGL warning: copyTexSubImage: Tex image TEXTURE_2D level 0 is incurring lazy initialization.
+[libprotobuf ERROR /builds/worker/checkouts/gecko/toolkit/components/protobuf/src/google/protobuf/message_lite.cc:134] Can't parse message of type "mozilla.cookieBanner.GoogleSOCSCookie" because it is missing required fields: (cannot determine missing fields for lite message)
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 678: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 678: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+JavaScript error: chrome://browser/content/pageinfo/pageInfo.js, line 678: NS_ERROR_IN_PROGRESS: Component returned failure code: 0x804b000f (NS_ERROR_IN_PROGRESS) [nsICacheEntry.dataSize]
+1756200971487	Marionette	INFO	Stopped listening on port 64741
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+console.error: "Error in worker resource://devtools/client/shared/source-map-loader/worker.js" ": "

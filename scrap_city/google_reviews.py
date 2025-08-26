@@ -24,7 +24,6 @@ logging.basicConfig(
 sele = FirefoxService(GeckoDriverManager().install())
 
 
-
 def parse_pbk6be_divs(divs):
     """
     Prend en entrée une liste de <div class="PBK6be"> (BeautifulSoup)
@@ -284,7 +283,7 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     soup = BeautifulSoup(driver.page_source,"html.parser")
 
-    xpath_nb_avis = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[4]/div[1]/div/div[2]/div[3]"
+    xpath_nb_avis = "/html/body/div[1]/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div/div[2]/div[3]"
     try:
         total_number_of_reviews_text = driver.find_element(By.XPATH, xpath_nb_avis).text
         total_number_of_reviews = float(total_number_of_reviews_text.split(" ")[-2].replace("\u202f", ""))
@@ -309,7 +308,7 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     time.sleep(1)
     try:
-        xpatrier = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[4]/div[8]/div[2]/button/span"
+        xpatrier = "/html/body/div[1]/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[8]/div[2]/button/span/span[2]"
         driver.find_element(By.XPATH, xpatrier).click()
         logging.info("Menu 'Trier' ouvert avec succès.")
     except:
@@ -317,7 +316,7 @@ def get_google_review(url, entreprise, name, nb_avis):
 
     time.sleep(2)
     try:
-        xpatrecent = "/html/body/div[2]/div[3]/div[3]/div[1]/div[2]"
+        xpatrecent = "/html/body/div[1]/div[3]/div[4]/div[1]/div/div[2]"
         driver.find_element(By.XPATH, xpatrecent).click()
         logging.info("Triage par avis les plus récents cliqué avec succès.")
     except:
@@ -329,8 +328,9 @@ def get_google_review(url, entreprise, name, nb_avis):
     #Find scroll layout
     #old_scroll = '//*[@id="pane"]/div/div[1]/div/div/div[2]'
     #old_scroll = "/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
-    #scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]"
-    scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[4]"
+    #scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[4]"
+    #scroll = "/html/body/div[2]/div[3]/div[8]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[4]"
+    scroll = "//div[contains(@class,'m6QErb') and contains(@class,'DxyBCb') and contains(@class,'kA9KIf')]"
     try:
         scrollable_div = driver.find_element(By.XPATH, scroll)
     except:
@@ -379,7 +379,8 @@ def get_list_review_google(url, entreprise, name, nb_avis=None):
         tmp["Review Time"], tmp["Review date collected"])]
 
     tmp = tmp.replace('\|', ',', regex=True)
-    filename = entreprise + "_" + name  # Nom pour le fichier CSV
+    # Ajout de la date au format ddmmYYYY dans le nom du fichier CSV (sauf pour log.csv)
+    filename = entreprise + "_" + name + "_" + datetime.today().strftime("%d%m%Y")
 
     # Vérifier si le fichier existe
     if os.path.isfile(filename + '.csv'):
